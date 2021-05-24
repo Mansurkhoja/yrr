@@ -1,333 +1,787 @@
 <!DOCTYPE html>
-<html lang="ru" data-theme="light">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <title>ЮРРОБОТ-Вход</title>
-    <link rel="stylesheet" href="css/fonts.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обмен данными</title>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
-
-    <div class="page page-sign-in">
-        <div class="sign-in" style="background-image: url(./img/robot-bg.png);">
-            <div class="theme-changer">
-                <input type="checkbox" name="theme-changer" title="Change Theme" id="theme-changer">
-                <label for="theme-changer"></label>
-            </div>
-            <div class="sign-in__inner">
-                <div class="sign-in__logo logo">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 273.54 82.83" fill="#fff">
-                        <defs>
-                            <style>
-                                .logo-gr {
-                                    fill: none;
-                                    stroke-miterlimit: 10;
-                                    stroke-width: 3px;
-                                    stroke: url(#logo-gradient);
-                                }
-                            </style>
-                            <linearGradient id="logo-gradient" x1="1.55" y1="50.54" x2="93.19" y2="32.73"
-                                gradientUnits="userSpaceOnUse">
-                                <stop offset="0" stop-color="#00b3a1" />
-                                <stop offset="0" stop-color="#00dfbc" />
-                                <stop offset="0.2" stop-color="#0fcdc6" />
-                                <stop offset="0.59" stop-color="#389ee0" />
-                                <stop offset="1" stop-color="#6766ff" />
-                                <stop offset="1" stop-color="#0271e1" />
-                                <stop offset="1" stop-color="#6a5eb8" />
-                            </linearGradient>
-                        </defs>
-                        <g>
-                            <path
-                                d="M131.78,47.92c0,3.85-2.34,8.94-10.53,8.94h-1.06c-7.2,0-9.9-3.91-10.41-7.5H107v7.21h-5V38.64h5v6.65h2.87c.69-3.44,3.44-6.94,10.33-6.94h1.06c8.19,0,10.53,4.92,10.53,8.85Zm-5.15-.53c0-2.22-1-4.94-5.91-4.94s-5.9,2.72-5.9,4.94v.34c0,2.17,1.16,5,5.9,5s5.91-2.84,5.91-5Z" />
-                            <path
-                                d="M138.46,50.83v5.74h-5V38.64h12.14c5.66,0,7.42,2.49,7.42,6v.27c0,3.4-1.83,6-7.42,6Zm0-4h6.82c1.83,0,2.62-.78,2.62-2.05v-.1c0-1.25-.79-2-2.62-2h-6.82Z" />
-                            <path
-                                d="M159.57,50.83v5.74h-5V38.64h12.14c5.66,0,7.42,2.49,7.42,6v.27c0,3.4-1.83,6-7.42,6Zm0-4h6.82c1.83,0,2.62-.78,2.62-2.05v-.1c0-1.25-.79-2-2.62-2h-6.82Z" />
-                            <path
-                                d="M186.75,38.35c8.38,0,10.77,4.92,10.77,8.85v.72c0,3.85-2.39,8.94-10.77,8.94h-1.06c-8.38,0-10.77-5.09-10.77-8.94V47.2c0-3.91,2.39-8.85,10.77-8.85Zm5.61,9c0-2.22-1.08-4.94-6.14-4.94s-6.14,2.72-6.14,4.94v.34c0,2.17,1.2,5,6.14,5s6.14-2.84,6.14-5Z" />
-                            <path
-                                d="M199.24,38.64h18.5v4H204.2v2.32h7.54c5.57,0,7.3,2.38,7.3,5.66v.26c0,3.28-1.81,5.74-7.3,5.74h-12.5Zm12.11,14c1.71,0,2.53-.75,2.53-1.83v-.17c0-1.06-.82-1.76-2.53-1.76H204.2v3.76Z" />
-                            <path
-                                d="M231.57,38.35c8.39,0,10.77,4.92,10.77,8.85v.72c0,3.85-2.38,8.94-10.77,8.94h-1.06c-8.38,0-10.77-5.09-10.77-8.94V47.2c0-3.91,2.39-8.85,10.77-8.85Zm5.62,9c0-2.22-1.09-4.94-6.15-4.94s-6.14,2.72-6.14,4.94v.34c0,2.17,1.2,5,6.14,5s6.15-2.84,6.15-5Z" />
-                            <path d="M249.28,42.74h-6.93v-4.1h18.81v4.1h-6.94V56.57h-4.94Z" />
-                            <path class="logo-gr"
-                                d="M4.21,39.45a2.72,2.72,0,0,1,2.66,2.23h20V27.38a.48.48,0,0,1,.14-.34l6.45-6.44a2.71,2.71,0,1,1,.67.67l-6.3,6.31v14.1H33a.54.54,0,0,1,.34.14L40.47,49H52.34a2.72,2.72,0,1,1,0,.95H40.27a.48.48,0,0,1-.34-.14l-7.18-7.16H6.87a2.71,2.71,0,1,1-2.66-3.19Zm33.07-4.34a2.71,2.71,0,0,0,5.37.48H54.53l7.18,7.17a.51.51,0,0,0,.34.13h6.73V57.43l-6.3,6.3a2.73,2.73,0,1,0,.67.68L69.58,58a.47.47,0,0,0,.14-.33l0-14.74H88.12a2.71,2.71,0,1,0,0-1H62.24l-7.18-7.16a.47.47,0,0,0-.33-.14H42.65a2.71,2.71,0,0,0-5.37.47ZM7.52,30a3.32,3.32,0,1,0,5.33-2.61A37.35,37.35,0,0,1,43.59,5.64a3.31,3.31,0,0,0,2.72,2.44V27.82a.48.48,0,1,0,1,0V8.08A3.31,3.31,0,0,0,50,5.64a36.77,36.77,0,0,1,9.18,2v10.2a.57.57,0,0,0,.14.34l6.45,6.44a2.69,2.69,0,1,0,.67-.68l-6.3-6.3V8A37.29,37.29,0,0,1,80.75,27.46a3.3,3.3,0,1,0,2.1-.76,3.25,3.25,0,0,0-.89.14A38.62,38.62,0,0,0,50.05,4.28a3.3,3.3,0,0,0-6.52,0A38.72,38.72,0,0,0,11.62,26.8a3.49,3.49,0,0,0-.79-.1A3.31,3.31,0,0,0,7.52,30Zm0,25a3.32,3.32,0,0,0,3.31,3.32,3.81,3.81,0,0,0,.6-.06,38.61,38.61,0,0,0,70.72,0,3.19,3.19,0,0,0,.7.08,3.35,3.35,0,1,0-1.94-.64A37.17,37.17,0,0,1,47.27,80V64.22a3.31,3.31,0,1,0-1,0V80a37.16,37.16,0,0,1-19.09-5.56l6.26-6.28a.48.48,0,0,0,.14-.34V58.66a2.72,2.72,0,1,0-.95,0v8.91l-6.29,6.3A37.15,37.15,0,0,1,12.69,57.71,3.31,3.31,0,1,0,7.52,55Z" />
-                            <path
-                                d="M268.36,30.65a5.28,5.28,0,0,1,2.55.67,4.67,4.67,0,0,1,1.93,1.91,5.31,5.31,0,0,1,.7,2.6,5.19,5.19,0,0,1-.69,2.57,4.83,4.83,0,0,1-1.91,1.92,5.22,5.22,0,0,1-5.15,0,4.92,4.92,0,0,1-1.92-1.92,5.19,5.19,0,0,1-.69-2.57,5.31,5.31,0,0,1,.7-2.6,4.7,4.7,0,0,1,1.94-1.91A5.25,5.25,0,0,1,268.36,30.65Zm0,.86a4.44,4.44,0,0,0-2.12.55,4.09,4.09,0,0,0-1.62,1.6,4.5,4.5,0,0,0-.58,2.17,4.34,4.34,0,0,0,.57,2.14,4.06,4.06,0,0,0,1.61,1.6,4.32,4.32,0,0,0,4.29,0,4,4,0,0,0,1.6-1.6,4.34,4.34,0,0,0,.57-2.14,4.5,4.5,0,0,0-.58-2.17,4.09,4.09,0,0,0-1.62-1.6A4.41,4.41,0,0,0,268.36,31.51Zm-2.27,7.18V33.12H268a4.86,4.86,0,0,1,1.42.15,1.44,1.44,0,0,1,.7.54,1.47,1.47,0,0,1,.26.82,1.49,1.49,0,0,1-.44,1.06,1.74,1.74,0,0,1-1.16.51,1.57,1.57,0,0,1,.48.29,6.34,6.34,0,0,1,.82,1.11l.68,1.09h-1.1l-.49-.88a4.61,4.61,0,0,0-.94-1.3,1.23,1.23,0,0,0-.72-.19H267v2.37Zm.9-3.14h1.09a1.74,1.74,0,0,0,1.07-.23.82.82,0,0,0,.15-1.06.84.84,0,0,0-.38-.29,2.71,2.71,0,0,0-.91-.1h-1Z" />
-                        </g>
-                    </svg>
-                </div>
-                <div class="sign-in__container">
-                    <div class="sign-in__welcome">
-                        Добро пожаловать
-                        на платформу по автоматизации взыскания задолженностей
+    <div class="page">
+        <div class="header">
+            <div class="header__inner">
+                <a href="index.html" class="header__logo logo"></a>
+                <div class="header__items">
+                    <div class="header__item">
+                        <span>132178469</span>
+                        <span>Вынесено решение</span>
                     </div>
-                    <div class="sign-in__block" style="background-image: url(./img/robot-bg.png);">
-                        <div class="sign-in__form-inner">
-                            <div class="sign-in__tab">
-                                <div class="tab-nav" role="tablist">
-                                    <a href="#" class="tab-link active" data-toggle="tab" data-target="sign-in">Вход</a>
-                                    <a href="#" class="tab-link" data-toggle="tab" data-target="auth">Регистрация</a>
-                                    <span></span>
-                                </div>
-                                <div class="tab-content active" data-tab-content="sign-in">
-                                    <form action="#" method="POST" class="tab-content__form sign-in-form">
-                                        <div class="form-content-welcome">Войдите в ЮРРОБОТ</div>
-                                        <div class="form-group">
-                                            <input class="custom-input" type="text" name="sign-in-name"
-                                                id="sign-in-name" placeholder="Введите почту или номер телефона">
-                                        </div>
-                                        <div class="form-group">
-                                            <input class="custom-input input-password" type="password"
-                                                name="sign-in-password" id="sign-in-password"
-                                                placeholder="Введите пароль">
-                                            <div class="toggle-password">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                                                    <use xlink:href="img/icons/sprite.svg#eye" />
-                                                </svg>
-                                            </div>
-                                        </div>
-                                        <div class="form-group checkbox-custom">
-                                            <input type="checkbox" name="check" class="checkbox-custom__input "
-                                                id="checkrule">
-                                            <label class="checkbox-custom__label" for="checkrule">соглашаюсь на
-                                                обработку
-                                                персональных данных и принимаю <a
-                                                    href="https://app.urrobot.net/assets/documents/privacy_policy.pdf"
-                                                    target="_blank">политику
-                                                    конфеденциальности</a>.</label>
-                                        </div>
-                                        <div class="forgot-password">
-                                            Забыли пароль?
-                                        </div>
-                                        <div class="form-group form-btns">
-                                            <button class="btn btn--demo loader-opener">Демо Вход</button>
-                                            <button class="btn btn--primary loader-opener">Войти</button>
-                                            <!-- <button class="btn btn--primary btn-sign-in" type="submit">Войти</button> -->
-                                        </div>
-                                    </form>
-                                    <form action="#" class="tab-content__form forgot-form hide">
-                                        <div class="form-content-welcome">Забыли пароль?
-                                            <span>Введите адрес электронной почты или телефона,
-                                                который вы использовали при регистрации,
-                                                и мы отправим вам инструкции по восстановлению пароля.</span>
-                                        </div>
-                                        <div class="form-group">
-                                            <input class="custom-input" type="text" name="forgot-name" id="forgot-name"
-                                                placeholder="Введите почту или номер телефона">
-
-                                        </div>
-                                        <div class="form-group form-btns">
-                                            <button class="btn btn--primary forgot-form-submit"
-                                                type="submit">Отправить</button>
-                                        </div>
-                                    </form>
-                                    <div class="forgot-form-success hide">
-                                        <div class="form-content-welcome">Забыли пароль?
-                                        </div>
-                                        <div class="form-content-info">Готово, информация для входа
-                                            отправлена на ваш email <span>example@gmail.com</span></div>
-                                        <div class="form-group form-btns">
-                                            <button class="btn btn--primary go-main">
-                                                На главную
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-content" data-tab-content="auth">
-                                    <form action="#" method="POST" class="tab-content__form ">
-                                        <div class="form-content-welcome">Вы с нами
-                                            впервые?<span>Присоединяйтесь!</span>
-                                        </div>
-                                        <div class="form-group">
-                                            <input class="custom-input error" type="text" name="auth-inn" id="auth-inn"
-                                                placeholder="Введите ИНН">
-                                        </div>
-                                        <div class="form-group">
-                                            <input class="custom-input" type="text" name="auth-name" id="auth-name"
-                                                placeholder="Введите почту или номер телефона">
-                                        </div>
-                                        <div class="form-group checkbox-custom">
-                                            <input type="checkbox" name="check" class="checkbox-custom__input "
-                                                id="checkrule2">
-                                            <label class="checkbox-custom__label" for="checkrule2">соглашаюсь на
-                                                обработку
-                                                персональных данных и принимаю <a
-                                                    href="https://app.urrobot.net/assets/documents/privacy_policy.pdf"
-                                                    target="_blank">политику
-                                                    конфеденциальности</a>.</label>
-                                        </div>
-                                        <div class="form-group form-btns">
-                                            <button class="btn btn--demo loader-opener">Демо Вход</button>
-                                            <button class="btn btn--primary btn-reg" type="submit">Регистрация</button>
-                                        </div>
-                                    </form>
-                                </div>
+                    <div class="header__item">
+                        <span>16537</span>
+                        <span>Подано в суд</span>
+                    </div>
+                    <div class="header__item">
+                        <span>73648</span>
+                        <span>В работе</span>
+                    </div>
+                    <div class="header__item">
+                        <span>726487</span>
+                        <span>Новый</span>
+                    </div>
+                    <div class="header__item">
+                        <span>3142536</span>
+                        <span>Отозвано</span>
+                    </div>
+                </div>
+                <div class="header__actions">
+                    <div class="header__actions-item dropdown">
+                        <a href="#" class="header__actions-btn has" data-toggle="dropdown">
+                            <div class="dropdown-toggle-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                    <use xlink:href="img/icons/sprite.svg#message" />
+                                </svg>
                             </div>
-                            <div class="sign-in-submit hide">
-                                <div class="form-content-welcome">Подтверждение</div>
-                                <div class="form-content-info">Мы отправили вам код подтверждения на почту
-                                    example@gmail.com</div>
-                                <div>Неверный email?</div>
-                                <div class="submit-numbers">
-                                    <input type="text" maxlength="1" class="input-next">
-                                    <input type="text" maxlength="1" class="input-next">
-                                    <input type="text" maxlength="1" class="input-next">
-                                    <input type="text" maxlength="1" class="input-next">
-                                    <input type="text" maxlength="1" class="input-next">
-                                    <input type="text" maxlength="1" class="input-next input-next-last">
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="#" class="dropdown-item">
+                                <div class="header__actions-title">
+                                    ЮРРОБОТ
                                 </div>
-                                <div class="timer"></div>
-                                <button class="btn btn--primary sign-in-submit-cancel">Назад</button>
+                                <div class="header__actions-text">
+                                    Кузовенковой Л.Н. выставлен счет на оплату
+                                </div>
+                                <div class="header__actions-date">
+                                    <span>19.03.2021</span>
+                                    <span>09:43</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header__actions-item dropdown">
+                        <a href="#" class="header__actions-btn header__actions-btn--notify has" data-toggle="dropdown">
+                            <div class="dropdown-toggle-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                    <use xlink:href="img/icons/sprite.svg#notify" />
+                                </svg>
                             </div>
-                            <div class="sign-in-password hide">
-                                <form action="#" method="POST" class="tab-content__form">
-                                    <div class="form-content-welcome">Установите пароль</div>
-                                    <div class="form-group">
-                                        <input class="custom-input input-password" type="password"
-                                            name="sign-in-pass-ready" id="sign-in-pass-ready"
-                                            placeholder="Введите пароль">
-                                        <div class="toggle-password">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                                                <use xlink:href="img/icons/sprite.svg#eye" />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <input class="custom-input input-password" type="password"
-                                            name="sign-in-pass-again" id="sign-in-pass-again"
-                                            placeholder="Повторите пароль">
-                                        <div class="toggle-password">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                                                <use xlink:href="img/icons/sprite.svg#eye" />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div class="form-group form-btns">
-                                        <!-- <a href="loading.html" class="btn btn--demo demo-sign-in">Демо Вход</a> -->
-                                        <button class="btn btn--primary loader-opener">Готово</button>
-                                        <!-- <button class="btn btn--primary sign-in-submit-ready"
-                                            type="submit">Готово</button> -->
-                                    </div>
-                            </div>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="#" class="dropdown-item">
+                                <div class="header__actions-title">
+                                    ЮРРОБОТ
+                                </div>
+                                <div class="header__actions-text">
+                                    Кузовенковой Л.Н. выставлен счет на оплату
+                                </div>
+                                <div class="header__actions-date">
+                                    <span>19.03.2021</span>
+                                    <span>09:43</span>
+                                </div>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <div class="header__actions-title">
+                                    ЮРРОБОТ
+                                </div>
+                                <div class="header__actions-text">
+                                    Кузовенковой Л.Н. выставлен счет на оплату
+                                </div>
+                                <div class="header__actions-date">
+                                    <span>19.03.2021</span>
+                                    <span>09:43</span>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="sign-in__footer">
-                    <div class="sign-in__footer-item">
-                        <a target="_blank" href="https://app.urrobot.net/assets/documents/EULA.pdf"
-                            class="sign-in__footer-link">Пользовательское соглашение</a>
-                    </div>
-                    <div class="sign-in__footer-item">
-                        <a target="_blank" href="https://app.urrobot.net/assets/documents/privacy_policy.pdf"
-                            class="sign-in__footer-link">Политика конфиденциальности</a>
+                <div class="header__menu dropdown">
+                    <a href="#" class="header__menu-link" data-toggle="dropdown">
+                        <div class="header__profile-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                <use xlink:href="img/icons/sprite.svg#user" />
+                            </svg>
+                        </div>
+                        <div class="header__menu-text">
+                            <span>МП ГПЩ "ДЕЗ ЖКХ"</span>
+                            <span>50 300 ₽</span>
+                        </div>
+                        <div class="dropdown-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                <use xlink:href="img/icons/sprite.svg#arrow-down" />
+                            </svg>
+                        </div>
+                    </a>
+                    <div class="dropdown-content">
+                        <div class="header__items">
+                            <div class="header__item">
+                                <span>132178469</span>
+                                <span>Вынесено решение</span>
+                            </div>
+                            <div class="header__item">
+                                <span>16537</span>
+                                <span>Подано в суд</span>
+                            </div>
+                            <div class="header__item">
+                                <span>73648</span>
+                                <span>В работе</span>
+                            </div>
+                            <div class="header__item">
+                                <span>726487</span>
+                                <span>Новый</span>
+                            </div>
+                            <div class="header__item">
+                                <span>3142536</span>
+                                <span>Отозвано</span>
+                            </div>
+                        </div>
+                        <a href="#" class="dropdown-item">
+                            <span>Изменение темы</span>
+                            <div class="theme-changer">
+                                <input type="checkbox" name="theme-changer" title="Change Theme" id="theme-changer">
+                                <label for="theme-changer"></label>
+                            </div>
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            Сменить пароль
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            Выход
+                        </a>
                     </div>
                 </div>
+                <a href="#" class="header__logout">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                        <use xlink:href="img/icons/sprite.svg#logout" />
+                    </svg>
+                </a>
             </div>
         </div>
-    </div>
-    <div class="page page-loader hide">
-        <div class="loader">
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-                y="0px" style="display: none;">
-                <symbol id="wave">
-                    <path
-                        d="M420,20c21.5-0.4,38.8-2.5,51.1-4.5c13.4-2.2,26.5-5.2,27.3-5.4C514,6.5,518,4.7,528.5,2.7c7.1-1.3,17.9-2.8,31.5-2.7c0,0,0,0,0,0v20H420z">
-                    </path>
-                    <path
-                        d="M420,20c-21.5-0.4-38.8-2.5-51.1-4.5c-13.4-2.2-26.5-5.2-27.3-5.4C326,6.5,322,4.7,311.5,2.7C304.3,1.4,293.6-0.1,280,0c0,0,0,0,0,0v20H420z">
-                    </path>
-                    <path
-                        d="M140,20c21.5-0.4,38.8-2.5,51.1-4.5c13.4-2.2,26.5-5.2,27.3-5.4C234,6.5,238,4.7,248.5,2.7c7.1-1.3,17.9-2.8,31.5-2.7c0,0,0,0,0,0v20H140z">
-                    </path>
-                    <path
-                        d="M140,20c-21.5-0.4-38.8-2.5-51.1-4.5c-13.4-2.2-26.5-5.2-27.3-5.4C46,6.5,42,4.7,31.5,2.7C24.3,1.4,13.6-0.1,0,0c0,0,0,0,0,0l0,20H140z">
-                    </path>
-                </symbol>
+        <div class="navbar">
+            <ul class="navbar__list">
+                <li class="navbar__item"><a href="#" class="navbar__link">
+                        <div class="navbar__icon-container">
+                            <picture>
+                                <source media="(max-width:848px)" srcset="img/desktop-white.png" type="image/png">
+                                <source srcset="img/desktop.png" type="image/png">
+                                <img class="navbar__icon" src="img/desktop.png" alt="Рабочий стол">
+                            </picture>
+                            <img class="navbar__icon navbar__icon--active" src="img/desktop-active.png">
+                        </div>
+
+                        <span>Рабочий стол</span>
+                    </a></li>
+                <li class="navbar__item"><a href="#" class="navbar__link active">
+                        <div class="navbar__icon-container">
+                            <picture>
+                                <source media="(max-width:848px)" srcset="img/organizations-white.png" type="image/png">
+                                <source srcset="img/organizations.png" type="image/png">
+                                <img class="navbar__icon" src="img/organizations.png" alt="Рабочий стол">
+                            </picture>
+                            <img class="navbar__icon navbar__icon--active" src="img/organizations-active.png">
+                        </div>
+
+                        <span>Организации</span>
+                    </a></li>
+                <li class="navbar__item"><a href="#" class="navbar__link">
+                        <div class="navbar__icon-container">
+                            <picture>
+                                <source media="(max-width:848px)" srcset="img/work-bag-white.png" type="image/png">
+                                <source srcset="img/work-bag.png" type="image/png">
+                                <img class="navbar__icon" src="img/work-bag.png" alt="Рабочий стол">
+                            </picture>
+                            <img class="navbar__icon navbar__icon--active" src="img/work-bag-active.png">
+                        </div>
+
+                        <span>Работа с должниками</span>
+                    </a></li>
+                <li class="navbar__item"><a href="#" class="navbar__link">
+                        <div class="navbar__icon-container">
+                            <picture>
+                                <source media="(max-width:848px)" srcset="img/change-data-white.png" type="image/png">
+                                <source srcset="img/change-data.png" type="image/png">
+                                <img class="navbar__icon" src="img/change-data.png" alt="Рабочий стол">
+                            </picture>
+                            <img class="navbar__icon navbar__icon--active" src="img/change-data-active.png">
+                        </div>
+                        <span>Обмен данными</span>
+                    </a></li>
+                <li class="navbar__item"><a href="#" class="navbar__link">
+                        <div class="navbar__icon-container">
+                            <picture>
+                                <source media="(max-width:848px)" srcset="img/control-panel-white.png" type="image/png">
+                                <source srcset="img/control-panel.png" type="image/png">
+                                <img class="navbar__icon" src="img/control-panel.png" alt="Рабочий стол">
+                            </picture>
+                            <img class="navbar__icon navbar__icon--active" src="img/control-panel-active.png">
+                        </div>
+
+                        <span>Панель управления</span>
+                    </a></li>
+            </ul>
+            <div class="navbar__copy">
+                © Юрробот 2017-2021
+                <br>
+                Версия 1.4.2 (pre-release)
+            </div>
+        </div>
+        <div class="navbar-closer">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                <use xlink:href="img/icons/sprite.svg#arrow-next" />
             </svg>
-            <div class="box">
-                <div class="percent">
-                    <div class="percentNum" id="count">0</div>
-                    <div class="percentB">%</div>
-                </div>
-                <div id="water" class="water">
-                    <svg viewBox="0 0 560 20" class="water_wave water_wave_back">
-                        <use xlink:href="#wave"></use>
-                    </svg>
-                    <svg viewBox="0 0 560 20" class="water_wave water_wave_front">
-                        <use xlink:href="#wave"></use>
-                    </svg>
-                </div>
-            </div>
-            <div class="loader__text">
-                <span>Загрузка</span>
-                <span class="loader__buble"></span>
-                <span class="loader__buble loader__buble--1"></span>
-                <span class="loader__buble loader__buble--2"></span>
-                <ul class="loader__list">
-                    <li class="loader__list-item">
-                        Загрузка чегото
-                    </li>
-                    <li class="loader__list-item">
-                        Загрузка чегото
-                    </li>
-                </ul>
-            </div>
         </div>
-        <div class="loader-finish">
-            <div class="sign-in__logo logo">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 273.54 82.83" fill="#fff">
-                    <defs>
-                        <style>
-                            .logo-grr {
-                                fill: none;
-                                stroke-miterlimit: 10;
-                                stroke-width: 3px;
-                                stroke: url(#logo-gradient2);
-                            }
-                        </style>
-                        <linearGradient id="logo-gradient2" x1="1.55" y1="50.54" x2="93.19" y2="32.73"
-                            gradientUnits="userSpaceOnUse">
-                            <stop offset="0" stop-color="#00b3a1" />
-                            <stop offset="0" stop-color="#00dfbc" />
-                            <stop offset="0.2" stop-color="#0fcdc6" />
-                            <stop offset="0.59" stop-color="#389ee0" />
-                            <stop offset="1" stop-color="#6766ff" />
-                            <stop offset="1" stop-color="#0271e1" />
-                            <stop offset="1" stop-color="#6a5eb8" />
-                        </linearGradient>
-                    </defs>
-                    <g>
-                        <path
-                            d="M131.78,47.92c0,3.85-2.34,8.94-10.53,8.94h-1.06c-7.2,0-9.9-3.91-10.41-7.5H107v7.21h-5V38.64h5v6.65h2.87c.69-3.44,3.44-6.94,10.33-6.94h1.06c8.19,0,10.53,4.92,10.53,8.85Zm-5.15-.53c0-2.22-1-4.94-5.91-4.94s-5.9,2.72-5.9,4.94v.34c0,2.17,1.16,5,5.9,5s5.91-2.84,5.91-5Z" />
-                        <path
-                            d="M138.46,50.83v5.74h-5V38.64h12.14c5.66,0,7.42,2.49,7.42,6v.27c0,3.4-1.83,6-7.42,6Zm0-4h6.82c1.83,0,2.62-.78,2.62-2.05v-.1c0-1.25-.79-2-2.62-2h-6.82Z" />
-                        <path
-                            d="M159.57,50.83v5.74h-5V38.64h12.14c5.66,0,7.42,2.49,7.42,6v.27c0,3.4-1.83,6-7.42,6Zm0-4h6.82c1.83,0,2.62-.78,2.62-2.05v-.1c0-1.25-.79-2-2.62-2h-6.82Z" />
-                        <path
-                            d="M186.75,38.35c8.38,0,10.77,4.92,10.77,8.85v.72c0,3.85-2.39,8.94-10.77,8.94h-1.06c-8.38,0-10.77-5.09-10.77-8.94V47.2c0-3.91,2.39-8.85,10.77-8.85Zm5.61,9c0-2.22-1.08-4.94-6.14-4.94s-6.14,2.72-6.14,4.94v.34c0,2.17,1.2,5,6.14,5s6.14-2.84,6.14-5Z" />
-                        <path
-                            d="M199.24,38.64h18.5v4H204.2v2.32h7.54c5.57,0,7.3,2.38,7.3,5.66v.26c0,3.28-1.81,5.74-7.3,5.74h-12.5Zm12.11,14c1.71,0,2.53-.75,2.53-1.83v-.17c0-1.06-.82-1.76-2.53-1.76H204.2v3.76Z" />
-                        <path
-                            d="M231.57,38.35c8.39,0,10.77,4.92,10.77,8.85v.72c0,3.85-2.38,8.94-10.77,8.94h-1.06c-8.38,0-10.77-5.09-10.77-8.94V47.2c0-3.91,2.39-8.85,10.77-8.85Zm5.62,9c0-2.22-1.09-4.94-6.15-4.94s-6.14,2.72-6.14,4.94v.34c0,2.17,1.2,5,6.14,5s6.15-2.84,6.15-5Z" />
-                        <path d="M249.28,42.74h-6.93v-4.1h18.81v4.1h-6.94V56.57h-4.94Z" />
-                        <path class="logo-grr"
-                            d="M4.21,39.45a2.72,2.72,0,0,1,2.66,2.23h20V27.38a.48.48,0,0,1,.14-.34l6.45-6.44a2.71,2.71,0,1,1,.67.67l-6.3,6.31v14.1H33a.54.54,0,0,1,.34.14L40.47,49H52.34a2.72,2.72,0,1,1,0,.95H40.27a.48.48,0,0,1-.34-.14l-7.18-7.16H6.87a2.71,2.71,0,1,1-2.66-3.19Zm33.07-4.34a2.71,2.71,0,0,0,5.37.48H54.53l7.18,7.17a.51.51,0,0,0,.34.13h6.73V57.43l-6.3,6.3a2.73,2.73,0,1,0,.67.68L69.58,58a.47.47,0,0,0,.14-.33l0-14.74H88.12a2.71,2.71,0,1,0,0-1H62.24l-7.18-7.16a.47.47,0,0,0-.33-.14H42.65a2.71,2.71,0,0,0-5.37.47ZM7.52,30a3.32,3.32,0,1,0,5.33-2.61A37.35,37.35,0,0,1,43.59,5.64a3.31,3.31,0,0,0,2.72,2.44V27.82a.48.48,0,1,0,1,0V8.08A3.31,3.31,0,0,0,50,5.64a36.77,36.77,0,0,1,9.18,2v10.2a.57.57,0,0,0,.14.34l6.45,6.44a2.69,2.69,0,1,0,.67-.68l-6.3-6.3V8A37.29,37.29,0,0,1,80.75,27.46a3.3,3.3,0,1,0,2.1-.76,3.25,3.25,0,0,0-.89.14A38.62,38.62,0,0,0,50.05,4.28a3.3,3.3,0,0,0-6.52,0A38.72,38.72,0,0,0,11.62,26.8a3.49,3.49,0,0,0-.79-.1A3.31,3.31,0,0,0,7.52,30Zm0,25a3.32,3.32,0,0,0,3.31,3.32,3.81,3.81,0,0,0,.6-.06,38.61,38.61,0,0,0,70.72,0,3.19,3.19,0,0,0,.7.08,3.35,3.35,0,1,0-1.94-.64A37.17,37.17,0,0,1,47.27,80V64.22a3.31,3.31,0,1,0-1,0V80a37.16,37.16,0,0,1-19.09-5.56l6.26-6.28a.48.48,0,0,0,.14-.34V58.66a2.72,2.72,0,1,0-.95,0v8.91l-6.29,6.3A37.15,37.15,0,0,1,12.69,57.71,3.31,3.31,0,1,0,7.52,55Z" />
-                        <path
-                            d="M268.36,30.65a5.28,5.28,0,0,1,2.55.67,4.67,4.67,0,0,1,1.93,1.91,5.31,5.31,0,0,1,.7,2.6,5.19,5.19,0,0,1-.69,2.57,4.83,4.83,0,0,1-1.91,1.92,5.22,5.22,0,0,1-5.15,0,4.92,4.92,0,0,1-1.92-1.92,5.19,5.19,0,0,1-.69-2.57,5.31,5.31,0,0,1,.7-2.6,4.7,4.7,0,0,1,1.94-1.91A5.25,5.25,0,0,1,268.36,30.65Zm0,.86a4.44,4.44,0,0,0-2.12.55,4.09,4.09,0,0,0-1.62,1.6,4.5,4.5,0,0,0-.58,2.17,4.34,4.34,0,0,0,.57,2.14,4.06,4.06,0,0,0,1.61,1.6,4.32,4.32,0,0,0,4.29,0,4,4,0,0,0,1.6-1.6,4.34,4.34,0,0,0,.57-2.14,4.5,4.5,0,0,0-.58-2.17,4.09,4.09,0,0,0-1.62-1.6A4.41,4.41,0,0,0,268.36,31.51Zm-2.27,7.18V33.12H268a4.86,4.86,0,0,1,1.42.15,1.44,1.44,0,0,1,.7.54,1.47,1.47,0,0,1,.26.82,1.49,1.49,0,0,1-.44,1.06,1.74,1.74,0,0,1-1.16.51,1.57,1.57,0,0,1,.48.29,6.34,6.34,0,0,1,.82,1.11l.68,1.09h-1.1l-.49-.88a4.61,4.61,0,0,0-.94-1.3,1.23,1.23,0,0,0-.72-.19H267v2.37Zm.9-3.14h1.09a1.74,1.74,0,0,0,1.07-.23.82.82,0,0,0,.15-1.06.84.84,0,0,0-.38-.29,2.71,2.71,0,0,0-.91-.1h-1Z" />
-                    </g>
-                </svg>
-            </div>
-            <div class="sign-in__welcome sign-in__welcome-opacity">
-                Добро пожаловать
-                на платформу по автоматизации взыскания задолженностей
-            </div>
+        <div class="page__inner">
+            <section class="page__inner-section change-data">
+                <div class="change-data__navbar">
+                    <div class="change-data__navbar-items">
+                        <a href="#" class="active" data-toggle="navbar" data-target="data-download">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                <use xlink:href="img/icons/sprite.svg#download" />
+                            </svg>
+                            <span>Загрузка данных</span>
+                        </a>
+                        <a href="#" data-toggle="navbar" data-target="data-upload">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                <use xlink:href="img/icons/sprite.svg#upload" />
+                            </svg>
+                            <span>Выгрузка данных</span>
+                        </a>
+                        <a href="#" data-toggle="navbar" data-target="data-integration">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                <use xlink:href="img/icons/sprite.svg#integration" />
+                            </svg>
+                            <span>Интеграция</span>
+                        </a>
+                    </div>
+                    <div class="change-data__progress progress">
+                        <div class="progress__loading">
+                            <div class="progress__name">
+                                Обработка <br> данных...
+                            </div>
+                            <div class="progress__content">
+                                <div class="progress__title">
+                                    Название загружаемого документа
+                                </div>
+                                <div class="progress__info">
+                                    <span class="progress__line-bg">
+                                        <span class="progress__line" style="width: 43%;"></span>
+                                    </span>
+                                    <div class="progress__procent">
+                                        43%
+                                    </div>
+                                </div>
+                                <div class="progrres__timer">
+                                    <div class="progress__title">Прошло времени:</div>
+                                    <span>00:00:00</span>
+                                </div>
+                                <div class="progrres__timer">
+                                    <div class="progress__title">Примерно осталось:</div>
+                                    <span>00:00:00</span>
+                                </div>
+                                <div class="progress__title">
+                                    Всего загружено: <span>530 из 5000</span>
+                                </div>
+                                <div class="progress__info">
+                                    <span class="progress__line-bg">
+                                        <span class="progress__line" style="width: 16%;"></span>
+                                    </span>
+                                    <div class="progress__procent">
+                                        16%
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="progress-show-all">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                    <use xlink:href="img/icons/sprite.svg#arrow-down" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="progress__succes" style="display: none;">
+                            <div class="progress__procent">
+                                100%
+                            </div>
+                            <span>Загрузка успешно завершена!</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="change-data__aside">
+                    <div class="change-data__dropdown">
+                        <select id="select-organization" class="custom-select" name="select-organization">
+                            <option selected="" disabled="" value="">Выберите организа</option>
+                            <option value="1">МП ГПЩ "ДЕЗ ЖКХ"</option>
+                            <option value="2">2МП ГПЩ "ДЕЗ ЖКХ"</option>
+                        </select>
+                        <select id="select-city" class="custom-select" name="select-city">
+                            <option selected="" disabled="" value="">Выберите город</option>
+                            <option value="1">г. Москва</option>
+                            <option value="2">2г. Москва</option>
+                        </select>
+                    </div>
+                    <div class="change-data__aside-items">
+                        <a href="#" class="change-data__aside-link aside-link-selected active">Досудебное производство
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                <use xlink:href="img/icons/sprite.svg#arrow-down" />
+                            </svg>
+                        </a>
+                        <ul class="aside-link-list">
+                            <li><a href="download-instruction.html" class="change-data__aside-link">Инструкция</a></li>
+                            <li><a href="#" class="change-data__aside-link active">Досудебное производство</a></li>
+                            <li><a href="#" class="change-data__aside-link">Судебное производство</a></li>
+                            <li><a href="#" class="change-data__aside-link">Исполнительное производство</a></li>
+                            <li><a href="#" class="change-data__aside-link">Банкротство</a></li>
+                            <li><a href="#" class="change-data__aside-link">Росреестр</a></li>
+                            <li><a href="#" class="change-data__aside-link">Платежное поручение</a></li>
+                            <li><a href="#" class="change-data__aside-link">Судебное решение</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="change-data__content">
+                    <div class="change-data__download download" id="data-download">
+                        <div class="change-data__title">
+                            Загрузить лицевые счета должников
+                        </div>
+                        <div class="download__left">
+                            <div class="download__navbar">
+                                <div class="download__year dropdown">
+                                    <div class="drop-select" data-toggle="dropdown">
+                                        <span class="drop-selected">2020 год</span>
+                                        <div class="dropdown-arrow">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                                <use xlink:href="img/icons/sprite.svg#arrow-down" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-content">
+                                        <div class="dropdown-item">
+                                            2021 год
+                                        </div>
+                                        <div class="dropdown-item">
+                                            2022 год
+                                        </div>
+                                        <div class="dropdown-item">
+                                            2023 год
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="download__navbar-item active" data-toggle="donwload"
+                                    data-target="download-files">
+                                    Загрузить файлы
+                                </div>
+                                <div class="download__navbar-item" data-toggle="donwload" data-target="download-api">
+                                    Интеграция по API
+                                </div>
+                            </div>
+                            <div class="download__type">
+                                <div class="download__type-item active">
+                                    Каскадный
+                                </div>
+                                <div class="download__type-item">
+                                    Линейный
+                                </div>
+                                <div class="alert">
+                                    <div class="alert-close">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                            <use xlink:href="img/icons/sprite.svg#close" />
+                                        </svg>
+                                    </div>
+                                    <p class="alert-text">
+                                        Каскадный способ загрузки...Lorem
+                                        ipsum dolor sit amet, consectetur
+                                        adipiscing elit, sed do eiusmod tempor incididunt
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="download__by">
+                                <div class="radio-custom">
+                                    <input type="radio" id="download-by-month" name="download-by" value="1"
+                                        class="radio-custom__input">
+                                    <label for="download-by-month" class="radio-custom__label">загрузить по
+                                        месяцам</label>
+                                </div>
+                                <div class="radio-custom">
+                                    <input type="radio" id="download-all" name="download-by" value="2"
+                                        class="radio-custom__input">
+                                    <label for="download-all" class="radio-custom__label">загрузить все</label>
+                                </div>
+                            </div>
+                            <div class="download__files">
+                                <!-- <input type="file" class=" custom-file-input form-control" id="f1">
+                                <label class="custom-file-label form-control " for="f1">
+                                    <span>Январь</span>
+                                </label> -->
+                                <div class="download__files-count">Загружено 36 файлов из 36</div>
+                                <div class="download__files-items">
+                                    <div class="download__files-month">Январь</div>
+                                    <div class="download__files-item downloaded"
+                                        style="background-image: url(./img/obmen-document.jpg);">
+                                        <div class="download__files-btn file-reload">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                                <use xlink:href="img/icons/sprite.svg#reload" />
+                                            </svg>
+                                        </div>
+                                        <div class="download__files-btn file-delete">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                                <use xlink:href="img/icons/sprite.svg#delete" />
+                                            </svg>
+                                        </div>
+                                        <div class="download__files-plus">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                                <use xlink:href="img/icons/sprite.svg#add" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="download__files-items">
+                                    <div class="download__files-month">Январь</div>
+                                    <div class="download__files-item">
+                                        <div class="download__files-btn file-reload">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                                <use xlink:href="img/icons/sprite.svg#reload" />
+                                            </svg>
+                                        </div>
+                                        <div class="download__files-btn file-delete">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                                <use xlink:href="img/icons/sprite.svg#delete" />
+                                            </svg>
+                                        </div>
+                                        <div class="download__files-plus">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                                <use xlink:href="img/icons/sprite.svg#add" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="download__files-items">
+                                    <div class="download__files-month">Январь</div>
+                                    <div class="download__files-item downloaded"
+                                        style="background-image: url(./img/obmen-document.jpg);">
+                                        <div class="download__files-btn file-reload">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                                <use xlink:href="img/icons/sprite.svg#reload" />
+                                            </svg>
+                                        </div>
+                                        <div class="download__files-btn file-delete">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                                <use xlink:href="img/icons/sprite.svg#delete" />
+                                            </svg>
+                                        </div>
+                                        <div class="download__files-plus">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                                <use xlink:href="img/icons/sprite.svg#add" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="download__files-items">
+                                    <div class="download__files-month">Январь</div>
+                                    <div class="download__files-item">
+                                        <div class="download__files-btn file-reload">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                                <use xlink:href="img/icons/sprite.svg#reload" />
+                                            </svg>
+                                        </div>
+                                        <div class="download__files-btn file-delete">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                                <use xlink:href="img/icons/sprite.svg#delete" />
+                                            </svg>
+                                        </div>
+                                        <div class="download__files-plus">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                                <use xlink:href="img/icons/sprite.svg#add" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="download__files-items">
+                                    <div class="download__files-month">Январь</div>
+                                    <div class="download__files-item downloaded"
+                                        style="background-image: url(./img/obmen-document.jpg);">
+                                        <div class="download__files-btn file-reload">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                                <use xlink:href="img/icons/sprite.svg#reload" />
+                                            </svg>
+                                        </div>
+                                        <div class="download__files-btn file-delete">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                                <use xlink:href="img/icons/sprite.svg#delete" />
+                                            </svg>
+                                        </div>
+                                        <div class="download__files-plus">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                                <use xlink:href="img/icons/sprite.svg#add" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="download__files-items">
+                                    <div class="download__files-month">Январь</div>
+                                    <div class="download__files-item">
+                                        <div class="download__files-btn file-reload">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                                <use xlink:href="img/icons/sprite.svg#reload" />
+                                            </svg>
+                                        </div>
+                                        <div class="download__files-btn file-delete">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                                <use xlink:href="img/icons/sprite.svg#delete" />
+                                            </svg>
+                                        </div>
+                                        <div class="download__files-plus">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                                <use xlink:href="img/icons/sprite.svg#add" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="download__files-items">
+                                    <div class="download__files-month">Январь</div>
+                                    <div class="download__files-item downloaded"
+                                        style="background-image: url(./img/obmen-document.jpg);">
+                                        <div class="download__files-btn file-reload">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                                <use xlink:href="img/icons/sprite.svg#reload" />
+                                            </svg>
+                                        </div>
+                                        <div class="download__files-btn file-delete">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                                <use xlink:href="img/icons/sprite.svg#delete" />
+                                            </svg>
+                                        </div>
+                                        <div class="download__files-plus">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                                <use xlink:href="img/icons/sprite.svg#add" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="download__files-items">
+                                    <div class="download__files-month">Январь</div>
+                                    <div class="download__files-item">
+                                        <div class="download__files-btn file-reload">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                                <use xlink:href="img/icons/sprite.svg#reload" />
+                                            </svg>
+                                        </div>
+                                        <div class="download__files-btn file-delete">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                                <use xlink:href="img/icons/sprite.svg#delete" />
+                                            </svg>
+                                        </div>
+                                        <div class="download__files-plus">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                                <use xlink:href="img/icons/sprite.svg#add" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="download__files-items">
+                                    <div class="download__files-month">Январь</div>
+                                    <div class="download__files-item downloaded"
+                                        style="background-image: url(./img/obmen-document.jpg);">
+                                        <div class="download__files-btn file-reload">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                                <use xlink:href="img/icons/sprite.svg#reload" />
+                                            </svg>
+                                        </div>
+                                        <div class="download__files-btn file-delete">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                                <use xlink:href="img/icons/sprite.svg#delete" />
+                                            </svg>
+                                        </div>
+                                        <div class="download__files-plus">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                                <use xlink:href="img/icons/sprite.svg#add" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="download__files-items">
+                                    <div class="download__files-month">Январь</div>
+                                    <div class="download__files-item">
+                                        <div class="download__files-btn file-reload">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                                <use xlink:href="img/icons/sprite.svg#reload" />
+                                            </svg>
+                                        </div>
+                                        <div class="download__files-btn file-delete">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                                <use xlink:href="img/icons/sprite.svg#delete" />
+                                            </svg>
+                                        </div>
+                                        <div class="download__files-plus">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                                <use xlink:href="img/icons/sprite.svg#add" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="download__files-items">
+                                    <div class="download__files-month">Январь</div>
+                                    <div class="download__files-item downloaded"
+                                        style="background-image: url(./img/obmen-document.jpg);">
+                                        <div class="download__files-btn file-reload">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                                <use xlink:href="img/icons/sprite.svg#reload" />
+                                            </svg>
+                                        </div>
+                                        <div class="download__files-btn file-delete">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                                <use xlink:href="img/icons/sprite.svg#delete" />
+                                            </svg>
+                                        </div>
+                                        <div class="download__files-plus">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                                <use xlink:href="img/icons/sprite.svg#add" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="download__files-items">
+                                    <div class="download__files-month">Январь</div>
+                                    <div class="download__files-item">
+                                        <div class="download__files-btn file-reload">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                                <use xlink:href="img/icons/sprite.svg#reload" />
+                                            </svg>
+                                        </div>
+                                        <div class="download__files-btn file-delete">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                                <use xlink:href="img/icons/sprite.svg#delete" />
+                                            </svg>
+                                        </div>
+                                        <div class="download__files-plus">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                                <use xlink:href="img/icons/sprite.svg#add" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="download__files-actions">
+                                    <div class="download__files-actions-btn download__files-more">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                            <use xlink:href="img/icons/sprite.svg#add" />
+                                        </svg>
+                                        <span>Загрузить еще</span>
+                                    </div>
+                                    <div class="download__files-actions-btn">
+                                        <span>Удалить все</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                            <use xlink:href="img/icons/sprite.svg#delete" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="download__api">
+                                <div class="download__api-navbar">
+                                    <a href="#" class="active" data-toggle="navbar-api"
+                                        data-target="api-phone">IP-телефония</a>
+                                    <a href="#" data-toggle="navbar-api" data-target="api-sms">Рассылка SMS</a>
+                                    <a href="#" data-toggle="navbar-api" data-target="api-mail">Рассылка Email</a>
+                                    <a href="#" data-toggle="navbar-api" data-target="api-bill">Биллинговые системы</a>
+                                    <a href="#" data-toggle="navbar-api" data-target="api-judge">Суды</a>
+                                    <a href="#" data-toggle="navbar-api" data-target="api-crm">CRM</a>
+                                </div>
+                                <div class="download__api-content active" id="api-phone">
+                                    <div class="download__api-item">
+                                        <div class="download__api-logo">
+                                            <img src="img/yandex.png" alt="yandex">
+                                        </div>
+                                        <span>
+                                            Интеграция с telephony.yandex.ru
+                                        </span>
+                                    </div>
+                                    <div class="download__api-item">
+                                        <div class="download__api-logo">
+                                            <img src="img/mtt.png" alt="mtt">
+                                        </div>
+                                        <span>
+                                            Интеграция с business.mtt.ru
+                                        </span>
+                                    </div>
+                                    <div class="download__api-item">
+                                        <div class="download__api-logo">
+                                            <img src="img/yandex.png" alt="yandex">
+                                        </div>
+                                        <span>
+                                            Интеграция с telephony.yandex.ru
+                                        </span>
+                                    </div>
+                                    <div class="download__api-item">
+                                        <div class="download__api-logo">
+                                            <img src="img/mtt.png" alt="mtt">
+                                        </div>
+                                        <span>
+                                            Интеграция с business.mtt.ru
+                                        </span>
+                                    </div>
+                                    <div class="download__api-item">
+                                        <div class="download__api-logo">
+                                            <img src="img/yandex.png" alt="yandex">
+                                        </div>
+                                        <span>
+                                            Интеграция с telephony.yandex.ru
+                                        </span>
+                                    </div>
+                                    <div class="download__api-item">
+                                        <div class="download__api-logo">
+                                            <img src="img/mtt.png" alt="mtt">
+                                        </div>
+                                        <span>
+                                            Интеграция с business.mtt.ru
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="download__api-content" id="api-mail">
+                                    <div class="download__api-item">
+                                        <div class="download__api-logo">
+                                            <img src="img/mtt.png" alt="mtt">
+                                        </div>
+                                        <span>
+                                            Интеграция с business.mtt.ru
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="download__right">
+                            <div class="download__right-inner">
+                                <div class="download__right-text">Скачайте на компьютер файл шаблона, сгенерированного
+                                    программой Excel.
+                                    Заполните его значениями</div>
+                                <div class="download__right-item">
+                                    <div class="download__right-title">
+                                        Каскадные шаблоны
+                                    </div>
+                                    <div class="download__right-type download-type active">CSV файл</div>
+                                    <div class="download__right-type download-type">XLS файл</div>
+                                    <div class="download__right-type download-type">XLSX файл</div>
+                                </div>
+                                <div class="download__right-item">
+                                    <div class="download__right-title">
+                                        Линейные шаблоны
+                                    </div>
+                                    <div class="download__right-type active">CSV файл</div>
+                                    <div class="download__right-type">XLS файл</div>
+                                    <div class="download__right-type">XLSX файл</div>
+                                </div>
+                            </div>
+                            <div class="download__right-btns">
+                                <button class="btn btn--out">ОТМЕНА</button>
+                                <button class="btn btn--primary">ЗАГРУЗИТЬ</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="change-data__upload" id="data-upload" style="display: none;">
+
+                    </div>
+                    <div class="change-data__integration" id="data-integration" style="display: none;">
+
+                    </div>
+                </div>
+            </section>
         </div>
-        
     </div>
     <script src="js/jquery.min.js"></script>
     <script src="js/main.min.js"></script>

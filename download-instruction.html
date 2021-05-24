@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обмен данными</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="page">
+        <div class="header">
+            <div class="header__inner">
+                <a href="index.html" class="header__logo logo"></a>
+                <div class="header__items">
+                    <div class="header__item">
+                        <span>132178469</span>
+                        <span>Вынесено решение</span>
+                    </div>
+                    <div class="header__item">
+                        <span>16537</span>
+                        <span>Подано в суд</span>
+                    </div>
+                    <div class="header__item">
+                        <span>73648</span>
+                        <span>В работе</span>
+                    </div>
+                    <div class="header__item">
+                        <span>726487</span>
+                        <span>Новый</span>
+                    </div>
+                    <div class="header__item">
+                        <span>3142536</span>
+                        <span>Отозвано</span>
+                    </div>
+                </div>
+                <div class="header__actions">
+                    <div class="header__actions-item dropdown">
+                        <a href="#" class="header__actions-btn has" data-toggle="dropdown">
+                            <div class="dropdown-toggle-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                    <use xlink:href="img/icons/sprite.svg#message" />
+                                </svg>
+                            </div>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="#" class="dropdown-item">
+                                <div class="header__actions-title">
+                                    ЮРРОБОТ
+                                </div>
+                                <div class="header__actions-text">
+                                    Кузовенковой Л.Н. выставлен счет на оплату
+                                </div>
+                                <div class="header__actions-date">
+                                    <span>19.03.2021</span>
+                                    <span>09:43</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header__actions-item dropdown">
+                        <a href="#" class="header__actions-btn header__actions-btn--notify has" data-toggle="dropdown">
+                            <div class="dropdown-toggle-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                    <use xlink:href="img/icons/sprite.svg#notify" />
+                                </svg>
+                            </div>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="#" class="dropdown-item">
+                                <div class="header__actions-title">
+                                    ЮРРОБОТ
+                                </div>
+                                <div class="header__actions-text">
+                                    Кузовенковой Л.Н. выставлен счет на оплату
+                                </div>
+                                <div class="header__actions-date">
+                                    <span>19.03.2021</span>
+                                    <span>09:43</span>
+                                </div>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <div class="header__actions-title">
+                                    ЮРРОБОТ
+                                </div>
+                                <div class="header__actions-text">
+                                    Кузовенковой Л.Н. выставлен счет на оплату
+                                </div>
+                                <div class="header__actions-date">
+                                    <span>19.03.2021</span>
+                                    <span>09:43</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__menu dropdown">
+                    <a href="#" class="header__menu-link" data-toggle="dropdown">
+                        <div class="header__profile-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                <use xlink:href="img/icons/sprite.svg#user" />
+                            </svg>
+                        </div>
+                        <div class="header__menu-text">
+                            <span>МП ГПЩ "ДЕЗ ЖКХ"</span>
+                            <span>50 300 ₽</span>
+                        </div>
+                        <div class="dropdown-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                <use xlink:href="img/icons/sprite.svg#arrow-down" />
+                            </svg>
+                        </div>
+                    </a>
+                    <div class="dropdown-content">
+                        <div class="header__items">
+                            <div class="header__item">
+                                <span>132178469</span>
+                                <span>Вынесено решение</span>
+                            </div>
+                            <div class="header__item">
+                                <span>16537</span>
+                                <span>Подано в суд</span>
+                            </div>
+                            <div class="header__item">
+                                <span>73648</span>
+                                <span>В работе</span>
+                            </div>
+                            <div class="header__item">
+                                <span>726487</span>
+                                <span>Новый</span>
+                            </div>
+                            <div class="header__item">
+                                <span>3142536</span>
+                                <span>Отозвано</span>
+                            </div>
+                        </div>
+                        <a href="#" class="dropdown-item">
+                            <span>Изменение темы</span>
+                            <div class="theme-changer">
+                                <input type="checkbox" name="theme-changer" title="Change Theme" id="theme-changer">
+                                <label for="theme-changer"></label>
+                            </div>
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            Сменить пароль
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            Выход
+                        </a>
+                    </div>
+                </div>
+                <a href="#" class="header__logout">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                        <use xlink:href="img/icons/sprite.svg#logout" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="navbar">
+            <ul class="navbar__list">
+                <li class="navbar__item"><a href="#" class="navbar__link">
+                        <div class="navbar__icon-container">
+                            <picture>
+                                <source media="(max-width:848px)" srcset="img/desktop-white.png" type="image/png">
+                                <source srcset="img/desktop.png" type="image/png">
+                                <img class="navbar__icon" src="img/desktop.png" alt="Рабочий стол">
+                            </picture>
+                            <img class="navbar__icon navbar__icon--active" src="img/desktop-active.png">
+                        </div>
+
+                        <span>Рабочий стол</span>
+                    </a></li>
+                <li class="navbar__item"><a href="#" class="navbar__link active">
+                        <div class="navbar__icon-container">
+                            <picture>
+                                <source media="(max-width:848px)" srcset="img/organizations-white.png" type="image/png">
+                                <source srcset="img/organizations.png" type="image/png">
+                                <img class="navbar__icon" src="img/organizations.png" alt="Рабочий стол">
+                            </picture>
+                            <img class="navbar__icon navbar__icon--active" src="img/organizations-active.png">
+                        </div>
+
+                        <span>Организации</span>
+                    </a></li>
+                <li class="navbar__item"><a href="#" class="navbar__link">
+                        <div class="navbar__icon-container">
+                            <picture>
+                                <source media="(max-width:848px)" srcset="img/work-bag-white.png" type="image/png">
+                                <source srcset="img/work-bag.png" type="image/png">
+                                <img class="navbar__icon" src="img/work-bag.png" alt="Рабочий стол">
+                            </picture>
+                            <img class="navbar__icon navbar__icon--active" src="img/work-bag-active.png">
+                        </div>
+
+                        <span>Работа с должниками</span>
+                    </a></li>
+                <li class="navbar__item"><a href="#" class="navbar__link">
+                        <div class="navbar__icon-container">
+                            <picture>
+                                <source media="(max-width:848px)" srcset="img/change-data-white.png" type="image/png">
+                                <source srcset="img/change-data.png" type="image/png">
+                                <img class="navbar__icon" src="img/change-data.png" alt="Рабочий стол">
+                            </picture>
+                            <img class="navbar__icon navbar__icon--active" src="img/change-data-active.png">
+                        </div>
+                        <span>Обмен данными</span>
+                    </a></li>
+                <li class="navbar__item"><a href="#" class="navbar__link">
+                        <div class="navbar__icon-container">
+                            <picture>
+                                <source media="(max-width:848px)" srcset="img/control-panel-white.png" type="image/png">
+                                <source srcset="img/control-panel.png" type="image/png">
+                                <img class="navbar__icon" src="img/control-panel.png" alt="Рабочий стол">
+                            </picture>
+                            <img class="navbar__icon navbar__icon--active" src="img/control-panel-active.png">
+                        </div>
+
+                        <span>Панель управления</span>
+                    </a></li>
+            </ul>
+            <div class="navbar__copy">
+                © Юрробот 2017-2021
+                <br>
+                Версия 1.4.2 (pre-release)
+            </div>
+        </div>
+        <div class="navbar-closer">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                <use xlink:href="img/icons/sprite.svg#arrow-next" />
+            </svg>
+        </div>
+        <div class="page__inner">
+            <section class="page__inner-section change-data">
+                <div class="change-data__navbar">
+                    <div class="change-data__navbar-items">
+                        <a href="#" class="active" data-toggle="navbar" data-target="data-download">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                <use xlink:href="img/icons/sprite.svg#download" />
+                            </svg>
+                            <span>Загрузка данных</span>
+                        </a>
+                        <a href="#" data-toggle="navbar" data-target="data-upload">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                <use xlink:href="img/icons/sprite.svg#upload" />
+                            </svg>
+                            <span>Выгрузка данных</span>
+                        </a>
+                        <a href="#" data-toggle="navbar" data-target="data-integration">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                <use xlink:href="img/icons/sprite.svg#integration" />
+                            </svg>
+                            <span>Интеграция</span>
+                        </a>
+                    </div>
+                    <div class="change-data__progress progress">
+                        <div class="progress__loading">
+                            <div class="progress__name">
+                                Обработка <br> данных...
+                            </div>
+                            <div class="progress__content">
+                                <div class="progress__title">
+                                    Название загружаемого документа
+                                </div>
+                                <div class="progress__info">
+                                    <span class="progress__line-bg">
+                                        <span class="progress__line" style="width: 43%;"></span>
+                                    </span>
+                                    <div class="progress__procent">
+                                        43%
+                                    </div>
+                                </div>
+                                <div class="progrres__timer">
+                                    <div class="progress__title">Прошло времени:</div>
+                                    <span>00:00:00</span>
+                                </div>
+                                <div class="progrres__timer">
+                                    <div class="progress__title">Примерно осталось:</div>
+                                    <span>00:00:00</span>
+                                </div>
+                                <div class="progress__title">
+                                    Всего загружено: <span>530 из 5000</span>
+                                </div>
+                                <div class="progress__info">
+                                    <span class="progress__line-bg">
+                                        <span class="progress__line" style="width: 16%;"></span>
+                                    </span>
+                                    <div class="progress__procent">
+                                        16%
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="progress-show-all">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                    <use xlink:href="img/icons/sprite.svg#arrow-down" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="progress__succes" style="display: none;">
+                            <div class="progress__procent">
+                                100%
+                            </div>
+                            <span>Загрузка успешно завершена!</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="change-data__aside">
+                    <div class="change-data__dropdown">
+                        <select id="select-organization" class="custom-select" name="select-organization">
+                            <option selected="" disabled="" value="">Выберите организа</option>
+                            <option value="1">МП ГПЩ "ДЕЗ ЖКХ"</option>
+                            <option value="2">2МП ГПЩ "ДЕЗ ЖКХ"</option>
+                        </select>
+                        <select id="select-city" class="custom-select" name="select-city">
+                            <option selected="" disabled="" value="">Выберите город</option>
+                            <option value="1">г. Москва</option>
+                            <option value="2">2г. Москва</option>
+                        </select>
+                    </div>
+                    <div class="change-data__aside-items">
+                        <a href="#" class="change-data__aside-link aside-link-selected active">Инструкция
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                <use xlink:href="img/icons/sprite.svg#arrow-down" />
+                            </svg>
+                        </a>
+                        <ul class="aside-link-list">
+                            <li><a href="download-instruction.html"
+                                    class="change-data__aside-link active">Инструкция</a></li>
+                            <li><a href="#" class="change-data__aside-link">Досудебное производство</a></li>
+                            <li><a href="#" class="change-data__aside-link">Судебное производство</a></li>
+                            <li><a href="#" class="change-data__aside-link">Исполнительное производство</a></li>
+                            <li><a href="#" class="change-data__aside-link">Банкротство</a></li>
+                            <li><a href="#" class="change-data__aside-link">Росреестр</a></li>
+                            <li><a href="#" class="change-data__aside-link">Платежное поручение</a></li>
+                            <li><a href="#" class="change-data__aside-link">Судебное решение</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="change-data__content">
+                    <div class="change-data__download download" id="data-download">
+                        <div class="change-data__title">
+                            Инструкция работы с файлом выгрузки должников
+                        </div>
+                        <div class="download__instruction">
+                            <div class="download__instruction-item">
+                                <div class="download__instruction-title">
+                                    Шаблоны
+                                </div>
+                                <div class="download__instruction-text">
+                                    <p>
+                                        Для того, чтобы использовать шаблоны, нажмите на нужный формат файла шаблона
+                                        (csv,
+                                        xls. xlsx) и скачайте его. Файл шаблона нужно заполнять строго как в примере.
+                                        Все
+                                        положения столбцов должны быть как в шаблоне, даже если они не используются.
+                                    </p>
+                                    <p>
+                                        В свою очередь в файле идет разбивка по домам, в виде блоков последовательных
+                                        строк.
+                                        Начинается блок названием улицы и дома (Ленина ул. д.2) и номеров квартир, далее
+                                        идет название следующей улицы и следующие номера квартир и так далее…
+                                    </p>
+                                    <div class="download__instruction-type">
+                                        <div class="download-type active">CSV файл</div>
+                                        <div class="download-type">XLS файл</div>
+                                        <div class="download-type">XLSX файл</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="download__instruction-item">
+                                <div class="download__instruction-title">
+                                    Собственный файл
+                                </div>
+                                <div class="download__instruction-text">
+                                    <p>
+                                        Чтобы выполнить загрузку Вашего файла, напишите нам на почту:
+                                        <a href="http://loading@urrobot.net" target="_blank" rel="noopener noreferrer">loading@urrobot.net</a> или оставьте заявку в чате, и мы сделаем шаблон для
+                                        Вас и все последующие выгрузки будите осуществлять используя Ваш файл.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="download__instruction-item">
+                                <div class="download__instruction-title">
+                                    Интеграция по API
+                                </div>
+                                <div class="download__instruction-text">
+                                    <p>
+                                        Если у Вас в организации используется программа 1С или другой программный
+                                        комплекс учета начислений, напишите нам на почту: loading@urrobot.net или
+                                        оставьте заявку в чате и мы сделаем безопасную интеграцию
+                                        с нашей платформой, что позволит все данные получать в онлайн режиме.
+                                    </p>
+                                    <p>
+                                        Для того чтобы выгрузить файлы (исключение п.3) Вам нужно выбрать год и
+                                        разложить файлы по нужным месяцам, после этого нажать импортировать. Ожидаем…
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="change-data__upload" id="data-upload" style="display: none;">
+
+                    </div>
+                    <div class="change-data__integration" id="data-integration" style="display: none;">
+
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
