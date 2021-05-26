@@ -308,29 +308,70 @@
                 </div>
                 <div class="change-data__aside">
                     <div class="change-data__dropdown">
-                        <select id="select-organization" class="custom-select" name="select-organization">
-                            <option selected="" disabled="" value="">Выберите организа</option>
-                            <option value="1">МП ГПЩ "ДЕЗ ЖКХ"</option>
-                            <option value="2">2МП ГПЩ "ДЕЗ ЖКХ"</option>
-                        </select>
-                        <select id="select-city" class="custom-select" name="select-city">
-                            <option selected="" disabled="" value="">Выберите город</option>
-                            <option value="1">г. Москва</option>
-                            <option value="2">2г. Москва</option>
-                        </select>
+                        <div class="download__organization dropdown">
+                            <div class="drop-select" data-toggle="dropdown">
+                                <span class="drop-selected">МП ГПЩ "ДЕЗ ЖКХ</span>
+                                <div class="dropdown-arrow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                        <use xlink:href="img/icons/sprite.svg#arrow-down" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="dropdown-content">
+                                <div class="dropdown-item">
+                                    МП ГПЩ "ДЕЗ ЖКХ
+                                </div>
+                                <div class="dropdown-item">
+                                    МП ГПЩ "ДЕЗ ЖКХ
+                                </div>
+                                <div class="dropdown-item">
+                                    МП ГПЩ "ДЕЗ ЖКХ
+                                </div>
+                            </div>
+                        </div>
+                        <div class="download__city dropdown">
+                            <div class="drop-select" data-toggle="dropdown">
+                                <span class="drop-selected">г. Москва</span>
+                                <div class="dropdown-arrow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                        <use xlink:href="img/icons/sprite.svg#arrow-down" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="dropdown-content">
+                                <div class="dropdown-item">
+                                    г. Москва
+                                </div>
+                                <div class="dropdown-item">
+                                    г. Москва
+                                </div>
+                                <div class="dropdown-item">
+                                    г. Москва
+                                </div>
+                                <div class="dropdown-item">
+                                    г. Москва
+                                </div>
+                                <div class="dropdown-item">
+                                    г. Москва
+                                </div>
+                                <div class="dropdown-item">
+                                    г. Москва
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="change-data__aside-items">
-                        <a href="#" class="change-data__aside-link aside-link-selected active">Инструкция
+                        <a href="#" class="change-data__aside-link aside-link-selected active">Досудебное производство
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon">
                                 <use xlink:href="img/icons/sprite.svg#arrow-down" />
                             </svg>
                         </a>
                         <ul class="aside-link-list">
-                            <li><a href="download-instruction.html"
-                                    class="change-data__aside-link active">Инструкция</a></li>
-                            <li><a href="#" class="change-data__aside-link">Досудебное производство</a></li>
-                            <li><a href="#" class="change-data__aside-link">Судебное производство</a></li>
-                            <li><a href="#" class="change-data__aside-link">Исполнительное производство</a></li>
+                            <li><a href="download-instruction.html" class="change-data__aside-link">Инструкция</a></li>
+                            <li><a href="#" class="change-data__aside-link active">Досудебное производство</a></li>
+                            <li><a href="judge.html" class="change-data__aside-link">Судебное производство</a></li>
+                            <li><a href="judge.html" class="change-data__aside-link">Исполнительное производство</a>
+                            </li>
                             <li><a href="#" class="change-data__aside-link">Банкротство</a></li>
                             <li><a href="#" class="change-data__aside-link">Росреестр</a></li>
                             <li><a href="#" class="change-data__aside-link">Платежное поручение</a></li>
@@ -338,8 +379,8 @@
                         </ul>
                     </div>
                 </div>
-                <div class="change-data__content">
-                    <div class="change-data__download download" id="data-download">
+                <div class="change-data__content" data-active="data-instruction">
+                    <div class="change-data__instruction change-data__download">
                         <div class="change-data__title">
                             Инструкция работы с файлом выгрузки должников
                         </div>
@@ -399,7 +440,6 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                     <div class="change-data__upload" id="data-upload" style="display: none;">
 
