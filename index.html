@@ -448,11 +448,17 @@
                                     <label for="download-all" class="radio-custom__label">загрузить все</label>
                                 </div>
                             </div>
+
                             <div class="download__files">
-                                <!-- <input type="file" class=" custom-file-input form-control" id="f1">
-                                <label class="custom-file-label form-control " for="f1">
-                                    <span>Январь</span>
-                                </label> -->
+                                <div class="download__files-all">
+                                    <input type="file" class="download__files-input">
+                                    <div class="download__files-all-text">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                            <use xlink:href="img/icons/sprite.svg#documents" />
+                                        </svg>
+                                        <span>Просто перетащите файлы</span>
+                                    </div>
+                                 </div>
                                 <div class="download__files-count">Загружено 36 файлов из 36</div>
                                 <div class="download__files-items">
                                     <div class="download__files-month">Январь</div>
@@ -856,10 +862,11 @@
                                     </div>
                                 </div>
                                 <div class="upload__datepicker">
-                                <input type="text" readonly class="upload__header-item" id="datepickerone">
-                                <span class="upload__header-items-br">по</span>
-                                <input type="text" readonly class="upload__header-item" id="datepickertwo">
-                            </div></div>
+                                    <input type="text" readonly class="upload__header-item" id="datepickerone">
+                                    <span class="upload__header-items-br">по</span>
+                                    <input type="text" readonly class="upload__header-item" id="datepickertwo">
+                                </div>
+                            </div>
                         </div>
                         <div class="upload__content">
                             <div class="upload__item">
@@ -892,8 +899,140 @@
                             <button class="btn btn--primary">ВЫГРУЗИТЬ</button>
                         </div>
                     </div>
-                    <div class="change-data__integration">
-
+                    <div class="change-data__integration integration">
+                        <div class="integration__navbar">
+                            <div class="integration__navbar-selected">
+                                <span>IP-телефония</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                    <use xlink:href="img/icons/sprite.svg#arrow-down" />
+                                </svg>
+                            </div>
+                            <ul class="integration__navbar-list">
+                                <li><a href="#" class="integration__navbar-link active" data-toggle="navbar-integration"
+                                        data-target="integration-phone">IP-телефония</a></li>
+                                <li><a href="#" class="integration__navbar-link" data-toggle="navbar-integration"
+                                        data-target="integration-sms">Рассылка SMS</a></li>
+                                <li><a href="#" class="integration__navbar-link" data-toggle="navbar-integration"
+                                        data-target="integration-mail">Рассылка Email</a></li>
+                                <li><a href="#" class="integration__navbar-link" data-toggle="navbar-integration"
+                                        data-target="integration-bill">Биллинговые системы</a></li>
+                                <li><a href="#" class="integration__navbar-link" data-toggle="navbar-integration"
+                                        data-target="integration-judge">Суды</a></li>
+                                <li><a href="#" class="integration__navbar-link" data-toggle="navbar-integration"
+                                        data-target="integration-crm">CRM</a></li>
+                            </ul>
+                        </div>
+                        <div class="integration__header">
+                            <div class="integration__title change-data__title">
+                                Интеграция
+                            </div>
+                            <div class="integration__progress">
+                                <div class="integration__progress-title">
+                                    Хранилище заполнено на:
+                                </div>
+                                <div class="integration__progress-info">
+                                    <span class="integration__progress-space">25 Мб из 256Мб</span>
+                                    <span class="integration__progress-line-bg">
+                                        <span class="integration__progress-line" style="width: 16%;"></span>
+                                    </span>
+                                    <span class="integration__progress-procent">16%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="integration__items active" id="integration-phone">
+                            <div class="integration__item">
+                                <div class="integration__item-logo">
+                                    <img src="img/yandex.png" alt="yandex">
+                                </div>
+                                <span>
+                                    Интеграция с telephony.yandex.ru
+                                </span>
+                            </div>
+                            <div class="integration__item">
+                                <div class="integration__item-logo">
+                                    <img src="img/yandex.png" alt="yandex">
+                                </div>
+                                <span>
+                                    Интеграция с telephony.yandex.ru
+                                </span>
+                            </div>
+                            <div class="integration__item">
+                                <div class="integration__item-logo">
+                                    <img src="img/yandex.png" alt="yandex">
+                                </div>
+                                <span>
+                                    Интеграция с telephony.yandex.ru
+                                </span>
+                            </div>
+                            <div class="integration__item">
+                                <div class="integration__item-logo">
+                                    <img src="img/yandex.png" alt="yandex">
+                                </div>
+                                <span>
+                                    Интеграция с telephony.yandex.ru
+                                </span>
+                            </div>
+                            <div class="integration__item">
+                                <div class="integration__item-logo">
+                                    <img src="img/yandex.png" alt="yandex">
+                                </div>
+                                <span>
+                                    Интеграция с telephony.yandex.ru
+                                </span>
+                            </div>
+                        </div>
+                        <div class="integration__items" id="integration-sms">
+                            <div class="integration__item">
+                                <div class="integration__item-logo">
+                                    <img src="img/mtt.png" alt="yandex">
+                                </div>
+                                <span>
+                                    Интеграция с telephony.yandex.ru
+                                </span>
+                            </div>
+                            <div class="integration__item">
+                                <div class="integration__item-logo">
+                                    <img src="img/yandex.png" alt="yandex">
+                                </div>
+                                <span>
+                                    Интеграция с telephony.yandex.ru
+                                </span>
+                            </div>
+                            <div class="integration__item">
+                                <div class="integration__item-logo">
+                                    <img src="img/yandex.png" alt="yandex">
+                                </div>
+                                <span>
+                                    Интеграция с telephony.yandex.ru
+                                </span>
+                            </div>
+                            <div class="integration__item">
+                                <div class="integration__item-logo">
+                                    <img src="img/yandex.png" alt="yandex">
+                                </div>
+                                <span>
+                                    Интеграция с telephony.yandex.ru
+                                </span>
+                            </div>
+                            <div class="integration__item">
+                                <div class="integration__item-logo">
+                                    <img src="img/yandex.png" alt="yandex">
+                                </div>
+                                <span>
+                                    Интеграция с telephony.yandex.ru
+                                </span>
+                            </div>
+                        </div>
+                        <div class="integration__items" id="integration-mail">
+                            <div class="integration__item">
+                                <div class="integration__item-logo">
+                                    <img src="img/yandex.png" alt="yandex">
+                                </div>
+                                <span>
+                                    Интеграция с telephony.yandex.ru
+                                </span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
