@@ -320,15 +320,6 @@
                             </div>
                             <div class="dropdown-content">
                                 <div class="dropdown-item">
-                                    2МП ГПЩ "ДЕЗ ЖКХ
-                                </div>
-                                <div class="dropdown-item">
-                                    1МП ГПЩ "ДЕЗ ЖКХ
-                                </div>
-                                <div class="dropdown-item">
-                                    МП ГПЩ "ДЕЗ ЖКХ
-                                </div>
-                                <div class="dropdown-item">
                                     МП ГПЩ "ДЕЗ ЖКХ
                                 </div>
                                 <div class="dropdown-item">
@@ -350,7 +341,7 @@
                             </div>
                             <div class="dropdown-content">
                                 <div class="dropdown-item">
-                                    г. Питер
+                                    г. Москва
                                 </div>
                                 <div class="dropdown-item">
                                     г. Москва
@@ -371,15 +362,15 @@
                         </div>
                     </div>
                     <div class="change-data__aside-items">
-                        <a href="#" class="change-data__aside-link aside-link-selected active">Судебное производство
+                        <a href="#" class="change-data__aside-link aside-link-selected active">Инструкция
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon">
                                 <use xlink:href="img/icons/sprite.svg#arrow-down" />
                             </svg>
                         </a>
                         <ul class="aside-link-list">
-                            <li><a href="download-instruction.html" class="change-data__aside-link">Инструкция</a></li>
-                            <li><a href="index.html" class="change-data__aside-link ">Досудебное производство</a></li>
-                            <li><a href="judge.html" class="change-data__aside-link active">Судебное производство</a></li>
+                            <li><a href="download-instruction.html" class="change-data__aside-link active">Инструкция</a></li>
+                            <li><a href="index.html" class="change-data__aside-link">Досудебное производство</a></li>
+                            <li><a href="judge.html" class="change-data__aside-link">Судебное производство</a></li>
                             <li><a href="judge.html" class="change-data__aside-link">Исполнительное производство</a>
                             </li>
                             <li><a href="judge.html" class="change-data__aside-link">Банкротство</a></li>
@@ -389,668 +380,73 @@
                         </ul>
                     </div>
                 </div>
-                <div class="change-data__content" data-active="data-download">
-                    <div class="change-data__download download">
+                <div class="change-data__content" data-active="data-instruction">
+                    <div class="change-data__instruction change-data__download">
                         <div class="change-data__title">
-                            Загрузить лицевые счета должников
+                            Инструкция работы с файлом выгрузки должников
                         </div>
-                        <div class="download__left">
-                            <div class="download__navbar">
-                                <div class="download__year dropdown">
-                                    <div class="drop-select" data-toggle="dropdown">
-                                        <span class="drop-selected">2020 год</span>
-                                        <div class="dropdown-arrow">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                                                <use xlink:href="img/icons/sprite.svg#arrow-down" />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div class="dropdown-content">
-                                        <div class="dropdown-item">
-                                            2021 год
-                                        </div>
-                                        <div class="dropdown-item">
-                                            2022 год
-                                        </div>
-                                        <div class="dropdown-item">
-                                            2023 год
-                                        </div>
-                                        <div class="dropdown-item">
-                                            2024 год
-                                        </div>
-                                        <div class="dropdown-item">
-                                            2025 год
-                                        </div>
-                                        <div class="dropdown-item">
-                                            2026 год
-                                        </div>
-                                    </div>
+                        <div class="download__instruction">
+                            <div class="download__instruction-item">
+                                <div class="download__instruction-title">
+                                    Шаблоны
                                 </div>
-                                <div class="download__navbar-item active" data-toggle="donwload"
-                                    data-target="download-files">
-                                    Загрузить файлы
-                                </div>
-                                <div class="download__navbar-item" data-toggle="donwload" data-target="download-api">
-                                    Интеграция по API
+                                <div class="download__instruction-text">
+                                    <p>
+                                        Для того, чтобы использовать шаблоны, нажмите на нужный формат файла шаблона
+                                        (csv,
+                                        xls. xlsx) и скачайте его. Файл шаблона нужно заполнять строго как в примере.
+                                        Все
+                                        положения столбцов должны быть как в шаблоне, даже если они не используются.
+                                    </p>
+                                    <p>
+                                        В свою очередь в файле идет разбивка по домам, в виде блоков последовательных
+                                        строк.
+                                        Начинается блок названием улицы и дома (Ленина ул. д.2) и номеров квартир, далее
+                                        идет название следующей улицы и следующие номера квартир и так далее…
+                                    </p>
+                                    <div class="download__instruction-type">
+                                        <div class="download-type active">CSV файл</div>
+                                        <div class="download-type">XLS файл</div>
+                                        <div class="download-type">XLSX файл</div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="download__type">
-                                <div class="download__type-item active" data-download-type="table">
-                                    Табличный
+                            <div class="download__instruction-item">
+                                <div class="download__instruction-title">
+                                    Собственный файл
                                 </div>
-                                <div class="download__type-item" data-download-type="linear">
-                                    Линейный
-                                </div>
-                                <div class="alert">
-                                    <div class="alert-close">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                                            <use xlink:href="img/icons/sprite.svg#close" />
-                                        </svg>
-                                    </div>
-                                    <p class="alert-text">
-                                        Каскадный способ загрузки...Lorem
-                                        ipsum dolor sit amet, consectetur
-                                        adipiscing elit, sed do eiusmod tempor incididunt
+                                <div class="download__instruction-text">
+                                    <p>
+                                        Чтобы выполнить загрузку Вашего файла, напишите нам на почту:
+                                        <a href="http://loading@urrobot.net" target="_blank" rel="noopener noreferrer">loading@urrobot.net</a> или оставьте заявку в чате, и мы сделаем шаблон для
+                                        Вас и все последующие выгрузки будите осуществлять используя Ваш файл.
                                     </p>
                                 </div>
                             </div>
-                            <div class="download__by">
-                                <div class="radio-custom">
-                                    <input type="radio" id="download-by-month" name="download-by" value="1"
-                                        class="radio-custom__input">
-                                    <label for="download-by-month" class="radio-custom__label">загрузить по
-                                        месяцам</label>
+                            <div class="download__instruction-item">
+                                <div class="download__instruction-title">
+                                    Интеграция по API
                                 </div>
-                                <div class="radio-custom">
-                                    <input type="radio" id="download-all" name="download-by" value="2"
-                                        class="radio-custom__input">
-                                    <label for="download-all" class="radio-custom__label">загрузить все</label>
+                                <div class="download__instruction-text">
+                                    <p>
+                                        Если у Вас в организации используется программа 1С или другой программный
+                                        комплекс учета начислений, напишите нам на почту: loading@urrobot.net или
+                                        оставьте заявку в чате и мы сделаем безопасную интеграцию
+                                        с нашей платформой, что позволит все данные получать в онлайн режиме.
+                                    </p>
+                                    <p>
+                                        Для того чтобы выгрузить файлы (исключение п.3) Вам нужно выбрать год и
+                                        разложить файлы по нужным месяцам, после этого нажать импортировать. Ожидаем…
+                                    </p>
                                 </div>
-                            </div>
-                            <div class="download__files">
-                                <div class="download__files-all">
-                                    <input type="file" class="download__files-input">
-                                    <div class="download__files-all-text">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                                            <use xlink:href="img/icons/sprite.svg#documents" />
-                                        </svg>
-                                        <span>Просто перетащите файлы</span>
-                                    </div>
-                                </div>
-                                <div class="download__files-count">Загружено 36 файлов из 36</div>
-                                <div class="download__files-items">
-                                    <div class="download__files-month">Январь</div>
-                                    <div class="download__files-item downloaded"
-                                        style="background-image: url(./img/obmen-document.jpg);">
-                                        <input type="file" class="download__files-input">
-                                        <div class="download__files-btn file-reload">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                                                <use xlink:href="img/icons/sprite.svg#reload" />
-                                            </svg>
-                                        </div>
-                                        <div class="download__files-btn file-delete">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                                                <use xlink:href="img/icons/sprite.svg#delete" />
-                                            </svg>
-                                        </div>
-                                        <div class="download__files-plus">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                                                <use xlink:href="img/icons/sprite.svg#add" />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="download__files-items">
-                                    <div class="download__files-month">Февраль</div>
-                                    <div class="download__files-item">
-                                        <input type="file" class="download__files-input">
-                                        <div class="download__files-btn file-reload">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                                                <use xlink:href="img/icons/sprite.svg#reload" />
-                                            </svg>
-                                        </div>
-                                        <div class="download__files-btn file-delete">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                                                <use xlink:href="img/icons/sprite.svg#delete" />
-                                            </svg>
-                                        </div>
-                                        <div class="download__files-plus">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                                                <use xlink:href="img/icons/sprite.svg#add" />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="download__files-items">
-                                    <div class="download__files-month">Март</div>
-                                    <div class="download__files-item downloaded"
-                                        style="background-image: url(./img/obmen-document.jpg);">
-                                        <div class="download__files-btn file-reload">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                                                <use xlink:href="img/icons/sprite.svg#reload" />
-                                            </svg>
-                                        </div>
-                                        <div class="download__files-btn file-delete">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                                                <use xlink:href="img/icons/sprite.svg#delete" />
-                                            </svg>
-                                        </div>
-                                        <div class="download__files-plus">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                                                <use xlink:href="img/icons/sprite.svg#add" />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="download__files-items">
-                                    <div class="download__files-month">Апрель</div>
-                                    <div class="download__files-item">
-                                        <div class="download__files-btn file-reload">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                                                <use xlink:href="img/icons/sprite.svg#reload" />
-                                            </svg>
-                                        </div>
-                                        <div class="download__files-btn file-delete">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                                                <use xlink:href="img/icons/sprite.svg#delete" />
-                                            </svg>
-                                        </div>
-                                        <div class="download__files-plus">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                                                <use xlink:href="img/icons/sprite.svg#add" />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="download__files-items">
-                                    <div class="download__files-month">Май</div>
-                                    <div class="download__files-item downloaded"
-                                        style="background-image: url(./img/obmen-document.jpg);">
-                                        <div class="download__files-btn file-reload">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                                                <use xlink:href="img/icons/sprite.svg#reload" />
-                                            </svg>
-                                        </div>
-                                        <div class="download__files-btn file-delete">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                                                <use xlink:href="img/icons/sprite.svg#delete" />
-                                            </svg>
-                                        </div>
-                                        <div class="download__files-plus">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                                                <use xlink:href="img/icons/sprite.svg#add" />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="download__files-items">
-                                    <div class="download__files-month">Июнь</div>
-                                    <div class="download__files-item">
-                                        <div class="download__files-btn file-reload">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                                                <use xlink:href="img/icons/sprite.svg#reload" />
-                                            </svg>
-                                        </div>
-                                        <div class="download__files-btn file-delete">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                                                <use xlink:href="img/icons/sprite.svg#delete" />
-                                            </svg>
-                                        </div>
-                                        <div class="download__files-plus">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                                                <use xlink:href="img/icons/sprite.svg#add" />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="download__files-items">
-                                    <div class="download__files-month">Июль</div>
-                                    <div class="download__files-item downloaded"
-                                        style="background-image: url(./img/obmen-document.jpg);">
-                                        <div class="download__files-btn file-reload">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                                                <use xlink:href="img/icons/sprite.svg#reload" />
-                                            </svg>
-                                        </div>
-                                        <div class="download__files-btn file-delete">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                                                <use xlink:href="img/icons/sprite.svg#delete" />
-                                            </svg>
-                                        </div>
-                                        <div class="download__files-plus">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                                                <use xlink:href="img/icons/sprite.svg#add" />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="download__files-items">
-                                    <div class="download__files-month">Август</div>
-                                    <div class="download__files-item">
-                                        <div class="download__files-btn file-reload">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                                                <use xlink:href="img/icons/sprite.svg#reload" />
-                                            </svg>
-                                        </div>
-                                        <div class="download__files-btn file-delete">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                                                <use xlink:href="img/icons/sprite.svg#delete" />
-                                            </svg>
-                                        </div>
-                                        <div class="download__files-plus">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                                                <use xlink:href="img/icons/sprite.svg#add" />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="download__files-items">
-                                    <div class="download__files-month">Сентябрь</div>
-                                    <div class="download__files-item downloaded"
-                                        style="background-image: url(./img/obmen-document.jpg);">
-                                        <div class="download__files-btn file-reload">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                                                <use xlink:href="img/icons/sprite.svg#reload" />
-                                            </svg>
-                                        </div>
-                                        <div class="download__files-btn file-delete">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                                                <use xlink:href="img/icons/sprite.svg#delete" />
-                                            </svg>
-                                        </div>
-                                        <div class="download__files-plus">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                                                <use xlink:href="img/icons/sprite.svg#add" />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="download__files-items">
-                                    <div class="download__files-month">Октябрь</div>
-                                    <div class="download__files-item">
-                                        <div class="download__files-btn file-reload">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                                                <use xlink:href="img/icons/sprite.svg#reload" />
-                                            </svg>
-                                        </div>
-                                        <div class="download__files-btn file-delete">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                                                <use xlink:href="img/icons/sprite.svg#delete" />
-                                            </svg>
-                                        </div>
-                                        <div class="download__files-plus">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                                                <use xlink:href="img/icons/sprite.svg#add" />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="download__files-items">
-                                    <div class="download__files-month">Ноябрь</div>
-                                    <div class="download__files-item downloaded"
-                                        style="background-image: url(./img/obmen-document.jpg);">
-                                        <div class="download__files-btn file-reload">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                                                <use xlink:href="img/icons/sprite.svg#reload" />
-                                            </svg>
-                                        </div>
-                                        <div class="download__files-btn file-delete">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                                                <use xlink:href="img/icons/sprite.svg#delete" />
-                                            </svg>
-                                        </div>
-                                        <div class="download__files-plus">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                                                <use xlink:href="img/icons/sprite.svg#add" />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="download__files-items">
-                                    <div class="download__files-month">Декабрь</div>
-                                    <div class="download__files-item">
-                                        <div class="download__files-btn file-reload">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                                                <use xlink:href="img/icons/sprite.svg#reload" />
-                                            </svg>
-                                        </div>
-                                        <div class="download__files-btn file-delete">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                                                <use xlink:href="img/icons/sprite.svg#delete" />
-                                            </svg>
-                                        </div>
-                                        <div class="download__files-plus">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                                                <use xlink:href="img/icons/sprite.svg#add" />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="download__files-actions">
-                                    <div class="download__files-actions-btn download__files-more">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                                            <use xlink:href="img/icons/sprite.svg#add" />
-                                        </svg>
-                                        <span>Загрузить еще</span>
-                                    </div>
-                                    <div class="download__files-actions-btn remove-all">
-                                        <span>Удалить все</span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                                            <use xlink:href="img/icons/sprite.svg#delete" />
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="download__file hide">
-                                <div class="download__file-item">
-                                    <input type="file" class="download__files-input">
-                                    <div class="download__file-text">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                                            <use xlink:href="img/icons/sprite.svg#documents" />
-                                        </svg>
-                                        <span>Просто перетащите файлы</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="download__api">
-                                <div class="download__api-navbar">
-                                    <a href="#" class="active" data-toggle="navbar-api"
-                                        data-target="api-phone">IP-телефония</a>
-                                    <a href="#" data-toggle="navbar-api" data-target="api-sms">Рассылка SMS</a>
-                                    <a href="#" data-toggle="navbar-api" data-target="api-mail">Рассылка Email</a>
-                                    <a href="#" data-toggle="navbar-api" data-target="api-bill">Биллинговые системы</a>
-                                    <a href="#" data-toggle="navbar-api" data-target="api-judge">Суды</a>
-                                    <a href="#" data-toggle="navbar-api" data-target="api-crm">CRM</a>
-                                </div>
-                                <div class="download__api-content active" id="api-phone">
-                                    <div class="download__api-item">
-                                        <div class="download__api-logo">
-                                            <img src="img/yandex.png" alt="yandex">
-                                        </div>
-                                        <span>
-                                            Интеграция с telephony.yandex.ru
-                                        </span>
-                                    </div>
-                                    <div class="download__api-item">
-                                        <div class="download__api-logo">
-                                            <img src="img/mtt.png" alt="mtt">
-                                        </div>
-                                        <span>
-                                            Интеграция с business.mtt.ru
-                                        </span>
-                                    </div>
-                                    <div class="download__api-item">
-                                        <div class="download__api-logo">
-                                            <img src="img/yandex.png" alt="yandex">
-                                        </div>
-                                        <span>
-                                            Интеграция с telephony.yandex.ru
-                                        </span>
-                                    </div>
-                                    <div class="download__api-item">
-                                        <div class="download__api-logo">
-                                            <img src="img/mtt.png" alt="mtt">
-                                        </div>
-                                        <span>
-                                            Интеграция с business.mtt.ru
-                                        </span>
-                                    </div>
-                                    <div class="download__api-item">
-                                        <div class="download__api-logo">
-                                            <img src="img/yandex.png" alt="yandex">
-                                        </div>
-                                        <span>
-                                            Интеграция с telephony.yandex.ru
-                                        </span>
-                                    </div>
-                                    <div class="download__api-item">
-                                        <div class="download__api-logo">
-                                            <img src="img/mtt.png" alt="mtt">
-                                        </div>
-                                        <span>
-                                            Интеграция с business.mtt.ru
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="download__api-content" id="api-mail">
-                                    <div class="download__api-item">
-                                        <div class="download__api-logo">
-                                            <img src="img/mtt.png" alt="mtt">
-                                        </div>
-                                        <span>
-                                            Интеграция с business.mtt.ru
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="download__right">
-                            <div class="download__right-inner">
-                                <div class="download__right-text">Скачайте на компьютер файл шаблона, сгенерированного
-                                    программой Excel.
-                                    Заполните его значениями</div>
-                                <div class="download__right-item download__right-item--table">
-                                    <div class="download__right-title">
-                                        Табличные шаблоны
-                                    </div>
-                                    <div class="download__right-type download-type active">CSV файл</div>
-                                    <div class="download__right-type download-type">XLS файл</div>
-                                    <div class="download__right-type download-type">XLSX файл</div>
-                                </div>
-                                <div class="download__right-item download__right-item--linear">
-                                    <div class="download__right-title">
-                                        Линейные шаблоны
-                                    </div>
-                                    <div class="download__right-type download-type active">CSV файл</div>
-                                    <div class="download__right-type download-type">XLS файл</div>
-                                    <div class="download__right-type download-type">XLSX файл</div>
-                                </div>
-                            </div>
-                            <div class="download__right-btns">
-                                <button class="btn btn--out">ОТМЕНА</button>
-                                <button class="btn btn--primary">ЗАГРУЗИТЬ</button>
                             </div>
                         </div>
                     </div>
-                    <div class="change-data__upload upload">
-                        <div class="upload__header">
-                            <div class="change-data__title">
-                                Выгрузка
-                            </div>
-                            <div class="upload__header-items">
-                                <div class="upload__header-item dropdown">
-                                    <div class="drop-select" data-toggle="dropdown">
-                                        <span class="drop-selected">PDF</span>
-                                        <div class="dropdown-arrow">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                                                <use xlink:href="img/icons/sprite.svg#arrow-down" />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div class="dropdown-content">
-                                        <div class="dropdown-item">
-                                            PDF
-                                        </div>
-                                        <div class="dropdown-item">
-                                            PDF
-                                        </div>
-                                        <div class="dropdown-item">
-                                            PDF
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="upload__datepicker">
-                                    <input type="text" readonly class="upload__header-item" id="datepickerone">
-                                    <span class="upload__header-items-br">по</span>
-                                    <input type="text" readonly class="upload__header-item" id="datepickertwo">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="upload__content">
-                            <div class="upload__item">
-                                <div class="upload__img">
-                                    <img src="img/pdf.png" alt="pdf">
-                                </div>
-                                <div class="uplpad__name">
-                                    Название
-                                </div>
-                            </div>
-                            <div class="upload__item">
-                                <div class="upload__img">
-                                    <img src="img/pdf.png" alt="pdf">
-                                </div>
-                                <div class="uplpad__name">
-                                    Название
-                                </div>
-                            </div>
-                            <div class="upload__item">
-                                <div class="upload__img">
-                                    <img src="img/pdf.png" alt="pdf">
-                                </div>
-                                <div class="uplpad__name">
-                                    Название
-                                </div>
-                            </div>
-                        </div>
-                        <div class="upload-btns">
-                            <button class="btn btn--out">ОТМЕНА</button>
-                            <button class="btn btn--primary">ВЫГРУЗИТЬ</button>
-                        </div>
+                    <div class="change-data__upload" id="data-upload" style="display: none;">
+
                     </div>
-                    <div class="change-data__integration integration">
-                        <div class="integration__navbar">
-                            <div class="integration__navbar-selected">
-                                <span>IP-телефония</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                                    <use xlink:href="img/icons/sprite.svg#arrow-down" />
-                                </svg>
-                            </div>
-                            <ul class="integration__navbar-list">
-                                <li><a href="#" class="integration__navbar-link active" data-toggle="navbar-integration"
-                                        data-target="integration-phone">IP-телефония</a></li>
-                                <li><a href="#" class="integration__navbar-link" data-toggle="navbar-integration"
-                                        data-target="integration-sms">Рассылка SMS</a></li>
-                                <li><a href="#" class="integration__navbar-link" data-toggle="navbar-integration"
-                                        data-target="integration-mail">Рассылка Email</a></li>
-                                <li><a href="#" class="integration__navbar-link" data-toggle="navbar-integration"
-                                        data-target="integration-bill">Биллинговые системы</a></li>
-                                <li><a href="#" class="integration__navbar-link" data-toggle="navbar-integration"
-                                        data-target="integration-judge">Суды</a></li>
-                                <li><a href="#" class="integration__navbar-link" data-toggle="navbar-integration"
-                                        data-target="integration-crm">CRM</a></li>
-                            </ul>
-                        </div>
-                        <div class="integration__header">
-                            <div class="integration__title change-data__title">
-                                Интеграция
-                            </div>
-                            <div class="integration__progress">
-                                <div class="integration__progress-title">
-                                    Хранилище заполнено на:
-                                </div>
-                                <div class="integration__progress-info">
-                                    <span class="integration__progress-space">25 Мб из 256Мб</span>
-                                    <span class="integration__progress-line-bg">
-                                        <span class="integration__progress-line" style="width: 16%;"></span>
-                                    </span>
-                                    <span class="integration__progress-procent">16%</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="integration__items active" id="integration-phone">
-                            <div class="integration__item">
-                                <div class="integration__item-logo">
-                                    <img src="img/yandex.png" alt="yandex">
-                                </div>
-                                <span>
-                                    Интеграция с telephony.yandex.ru
-                                </span>
-                            </div>
-                            <div class="integration__item">
-                                <div class="integration__item-logo">
-                                    <img src="img/yandex.png" alt="yandex">
-                                </div>
-                                <span>
-                                    Интеграция с telephony.yandex.ru
-                                </span>
-                            </div>
-                            <div class="integration__item">
-                                <div class="integration__item-logo">
-                                    <img src="img/yandex.png" alt="yandex">
-                                </div>
-                                <span>
-                                    Интеграция с telephony.yandex.ru
-                                </span>
-                            </div>
-                            <div class="integration__item">
-                                <div class="integration__item-logo">
-                                    <img src="img/yandex.png" alt="yandex">
-                                </div>
-                                <span>
-                                    Интеграция с telephony.yandex.ru
-                                </span>
-                            </div>
-                            <div class="integration__item">
-                                <div class="integration__item-logo">
-                                    <img src="img/yandex.png" alt="yandex">
-                                </div>
-                                <span>
-                                    Интеграция с telephony.yandex.ru
-                                </span>
-                            </div>
-                        </div>
-                        <div class="integration__items" id="integration-sms">
-                            <div class="integration__item">
-                                <div class="integration__item-logo">
-                                    <img src="img/mtt.png" alt="yandex">
-                                </div>
-                                <span>
-                                    Интеграция с telephony.yandex.ru
-                                </span>
-                            </div>
-                            <div class="integration__item">
-                                <div class="integration__item-logo">
-                                    <img src="img/yandex.png" alt="yandex">
-                                </div>
-                                <span>
-                                    Интеграция с telephony.yandex.ru
-                                </span>
-                            </div>
-                            <div class="integration__item">
-                                <div class="integration__item-logo">
-                                    <img src="img/yandex.png" alt="yandex">
-                                </div>
-                                <span>
-                                    Интеграция с telephony.yandex.ru
-                                </span>
-                            </div>
-                            <div class="integration__item">
-                                <div class="integration__item-logo">
-                                    <img src="img/yandex.png" alt="yandex">
-                                </div>
-                                <span>
-                                    Интеграция с telephony.yandex.ru
-                                </span>
-                            </div>
-                            <div class="integration__item">
-                                <div class="integration__item-logo">
-                                    <img src="img/yandex.png" alt="yandex">
-                                </div>
-                                <span>
-                                    Интеграция с telephony.yandex.ru
-                                </span>
-                            </div>
-                        </div>
-                        <div class="integration__items" id="integration-mail">
-                            <div class="integration__item">
-                                <div class="integration__item-logo">
-                                    <img src="img/yandex.png" alt="yandex">
-                                </div>
-                                <span>
-                                    Интеграция с telephony.yandex.ru
-                                </span>
-                            </div>
-                        </div>
+                    <div class="change-data__integration" id="data-integration" style="display: none;">
+
                     </div>
                 </div>
             </section>
