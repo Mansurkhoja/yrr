@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Обмен данными</title>
     <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/datepicker.minimal.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -266,29 +267,29 @@
                                 </div>
                                 <div class="progress__info">
                                     <span class="progress__line-bg">
-                                        <span class="progress__line" style="width: 43%;"></span>
+                                        <span class="progress__line progress__line--1" style="width: 75%;"></span>
                                     </span>
-                                    <div class="progress__procent">
-                                        43%
+                                    <div class="progress__procent" data-procent="progress-1">
+                                        75%
                                     </div>
                                 </div>
                                 <div class="progrres__timer">
                                     <div class="progress__title">Прошло времени:</div>
-                                    <span>00:00:00</span>
+                                    <span>00:01:00</span>
                                 </div>
                                 <div class="progrres__timer">
                                     <div class="progress__title">Примерно осталось:</div>
-                                    <span>00:00:00</span>
+                                    <span>00:00:54</span>
                                 </div>
                                 <div class="progress__title">
                                     Всего загружено: <span>530 из 5000</span>
                                 </div>
                                 <div class="progress__info">
                                     <span class="progress__line-bg">
-                                        <span class="progress__line" style="width: 16%;"></span>
+                                        <span class="progress__line progress__line--2" style="width: 80%;"></span>
                                     </span>
-                                    <div class="progress__procent">
-                                        16%
+                                    <div class="progress__procent" data-procent="progress-2">
+                                        80%
                                     </div>
                                 </div>
                             </div>
@@ -298,7 +299,7 @@
                                 </svg>
                             </div>
                         </div>
-                        <div class="progress__succes" style="display: none;">
+                        <div class="progress__succes">
                             <div class="progress__procent">
                                 100%
                             </div>
@@ -361,18 +362,18 @@
                         </div>
                     </div>
                     <div class="change-data__aside-items">
-                        <a href="#" class="change-data__aside-link aside-link-selected active">Досудебное производство
+                        <a href="#" class="change-data__aside-link aside-link-selected active">Инструкция
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon">
                                 <use xlink:href="img/icons/sprite.svg#arrow-down" />
                             </svg>
                         </a>
                         <ul class="aside-link-list">
-                            <li><a href="download-instruction.html" class="change-data__aside-link">Инструкция</a></li>
-                            <li><a href="#" class="change-data__aside-link active">Досудебное производство</a></li>
+                            <li><a href="download-instruction.html" class="change-data__aside-link active">Инструкция</a></li>
+                            <li><a href="index.html" class="change-data__aside-link">Досудебное производство</a></li>
                             <li><a href="judge.html" class="change-data__aside-link">Судебное производство</a></li>
                             <li><a href="judge.html" class="change-data__aside-link">Исполнительное производство</a>
                             </li>
-                            <li><a href="#" class="change-data__aside-link">Банкротство</a></li>
+                            <li><a href="judge.html" class="change-data__aside-link">Банкротство</a></li>
                             <li><a href="#" class="change-data__aside-link">Росреестр</a></li>
                             <li><a href="#" class="change-data__aside-link">Платежное поручение</a></li>
                             <li><a href="#" class="change-data__aside-link">Судебное решение</a></li>
@@ -452,6 +453,7 @@
         </div>
     </div>
     <script src="js/jquery.min.js"></script>
+    <script src="js/datepicker.js"></script>
     <script src="js/main.min.js"></script>
 </body>
 
