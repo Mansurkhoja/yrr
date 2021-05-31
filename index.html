@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -377,8 +376,9 @@
                             </svg>
                         </a>
                         <ul class="aside-link-list">
-                            <li><a href="download-instruction.html" class="change-data__aside-link">Инструкция</a></li>
-                            <li><a href="index.html" class="change-data__aside-link active">Досудебное производство</a>
+                            <li><a href="download-instruction.html" class="change-data__aside-link instr">Инструкция</a></li>
+                            <li><a href="download-instruction.html" class="change-data__aside-link hide otchet active">Отчеты</a></li>
+                            <li><a href="index.html" class="change-data__aside-link dosud active">Досудебное производство</a>
                             </li>
                             <li><a href="judge.html" class="change-data__aside-link">Судебное производство</a></li>
                             <li><a href="judge.html" class="change-data__aside-link">Исполнительное производство</a>
@@ -784,7 +784,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="download__files-items for-all">
+                                <!-- <div class="download__files-items for-all">
                                     <div class="download__files-item">
                                         <div class="download__files-btn file-reload">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="icon">
@@ -802,13 +802,14 @@
                                             </svg>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                                 <div class="download__files-actions hide">
                                     <div class="download__files-actions-btn download__files-more">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="icon">
                                             <use xlink:href="img/icons/sprite.svg#add" />
                                         </svg>
                                         <span>Загрузить еще</span>
+                                        <input type="file" name="load-more">
                                     </div>
                                     <div class="download__files-actions-btn remove-all">
                                         <span>Удалить все</span>
@@ -818,7 +819,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="download__file hide">
+                            <div class="download__file hide ">
                                 <div class="download__file-item">
                                     <input type="file" class="download__files-input">
                                     <div class="download__file-text">
@@ -1056,7 +1057,6 @@
                                         </div>
                                     </div>
                                 </div>
-
                                 <div class="download__files-items for-all">
                                     <div class="download__files-item">
                                         <div class="download__files-btn file-reload">
@@ -1139,6 +1139,7 @@
                                             <use xlink:href="img/icons/sprite.svg#add"></use>
                                         </svg>
                                         <span>Загрузить еще</span>
+                                        <input type="file" name="load-more">
                                     </div>
                                     <div class="download__files-actions-btn remove-all">
                                         <span>Удалить все</span>
@@ -1208,10 +1209,210 @@
                                         </span>
                                     </div>
                                 </div>
-                                <div class="download__api-content" id="api-mail">
+                                <div class="download__api-content" id="api-sms">
                                     <div class="download__api-item">
                                         <div class="download__api-logo">
                                             <img src="img/mtt.png" alt="mtt">
+                                        </div>
+                                        <span>
+                                            Интеграция с business.mtt.ru
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="download__api-content" id="api-mail">
+                                    <div class="download__api-item">
+                                        <div class="download__api-logo">
+                                            <img src="img/yandex.png" alt="yandex">
+                                        </div>
+                                        <span>
+                                            Интеграция с telephony.yandex.ru
+                                        </span>
+                                    </div>
+                                    <div class="download__api-item">
+                                        <div class="download__api-logo">
+                                            <img src="img/mtt.png" alt="mtt">
+                                        </div>
+                                        <span>
+                                            Интеграция с business.mtt.ru
+                                        </span>
+                                    </div>
+                                    <div class="download__api-item">
+                                        <div class="download__api-logo">
+                                            <img src="img/logo-2.png" alt="yandex">
+                                        </div>
+                                        <span>
+                                            Интеграция с telephony.yandex.ru
+                                        </span>
+                                    </div>
+                                    <div class="download__api-item">
+                                        <div class="download__api-logo">
+                                            <img src="img/logo1.png" alt="mtt">
+                                        </div>
+                                        <span>
+                                            Интеграция с business.mtt.ru
+                                        </span>
+                                    </div>
+                                    <div class="download__api-item">
+                                        <div class="download__api-logo">
+                                            <img src="img/logo-3.png" alt="yandex">
+                                        </div>
+                                        <span>
+                                            Интеграция с telephony.yandex.ru
+                                        </span>
+                                    </div>
+                                    <div class="download__api-item">
+                                        <div class="download__api-logo">
+                                            <img src="img/logo-4.png" alt="mtt">
+                                        </div>
+                                        <span>
+                                            Интеграция с business.mtt.ru
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="download__api-content" id="api-bill">
+                                    <div class="download__api-item">
+                                        <div class="download__api-logo">
+                                            <img src="img/yandex.png" alt="yandex">
+                                        </div>
+                                        <span>
+                                            Интеграция с telephony.yandex.ru
+                                        </span>
+                                    </div>
+                                    <div class="download__api-item">
+                                        <div class="download__api-logo">
+                                            <img src="img/mtt.png" alt="mtt">
+                                        </div>
+                                        <span>
+                                            Интеграция с business.mtt.ru
+                                        </span>
+                                    </div>
+                                    <div class="download__api-item">
+                                        <div class="download__api-logo">
+                                            <img src="img/logo-2.png" alt="yandex">
+                                        </div>
+                                        <span>
+                                            Интеграция с telephony.yandex.ru
+                                        </span>
+                                    </div>
+                                    <div class="download__api-item">
+                                        <div class="download__api-logo">
+                                            <img src="img/logo1.png" alt="mtt">
+                                        </div>
+                                        <span>
+                                            Интеграция с business.mtt.ru
+                                        </span>
+                                    </div>
+                                    <div class="download__api-item">
+                                        <div class="download__api-logo">
+                                            <img src="img/logo-3.png" alt="yandex">
+                                        </div>
+                                        <span>
+                                            Интеграция с telephony.yandex.ru
+                                        </span>
+                                    </div>
+                                    <div class="download__api-item">
+                                        <div class="download__api-logo">
+                                            <img src="img/logo-4.png" alt="mtt">
+                                        </div>
+                                        <span>
+                                            Интеграция с business.mtt.ru
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="download__api-content" id="api-judge">
+                                    <div class="download__api-item">
+                                        <div class="download__api-logo">
+                                            <img src="img/yandex.png" alt="yandex">
+                                        </div>
+                                        <span>
+                                            Интеграция с telephony.yandex.ru
+                                        </span>
+                                    </div>
+                                    <div class="download__api-item">
+                                        <div class="download__api-logo">
+                                            <img src="img/mtt.png" alt="mtt">
+                                        </div>
+                                        <span>
+                                            Интеграция с business.mtt.ru
+                                        </span>
+                                    </div>
+                                    <div class="download__api-item">
+                                        <div class="download__api-logo">
+                                            <img src="img/logo-2.png" alt="yandex">
+                                        </div>
+                                        <span>
+                                            Интеграция с telephony.yandex.ru
+                                        </span>
+                                    </div>
+                                    <div class="download__api-item">
+                                        <div class="download__api-logo">
+                                            <img src="img/logo1.png" alt="mtt">
+                                        </div>
+                                        <span>
+                                            Интеграция с business.mtt.ru
+                                        </span>
+                                    </div>
+                                    <div class="download__api-item">
+                                        <div class="download__api-logo">
+                                            <img src="img/logo-3.png" alt="yandex">
+                                        </div>
+                                        <span>
+                                            Интеграция с telephony.yandex.ru
+                                        </span>
+                                    </div>
+                                    <div class="download__api-item">
+                                        <div class="download__api-logo">
+                                            <img src="img/logo-4.png" alt="mtt">
+                                        </div>
+                                        <span>
+                                            Интеграция с business.mtt.ru
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="download__api-content" id="api-crm">
+                                    <div class="download__api-item">
+                                        <div class="download__api-logo">
+                                            <img src="img/yandex.png" alt="yandex">
+                                        </div>
+                                        <span>
+                                            Интеграция с telephony.yandex.ru
+                                        </span>
+                                    </div>
+                                    <div class="download__api-item">
+                                        <div class="download__api-logo">
+                                            <img src="img/mtt.png" alt="mtt">
+                                        </div>
+                                        <span>
+                                            Интеграция с business.mtt.ru
+                                        </span>
+                                    </div>
+                                    <div class="download__api-item">
+                                        <div class="download__api-logo">
+                                            <img src="img/logo-2.png" alt="yandex">
+                                        </div>
+                                        <span>
+                                            Интеграция с telephony.yandex.ru
+                                        </span>
+                                    </div>
+                                    <div class="download__api-item">
+                                        <div class="download__api-logo">
+                                            <img src="img/logo1.png" alt="mtt">
+                                        </div>
+                                        <span>
+                                            Интеграция с business.mtt.ru
+                                        </span>
+                                    </div>
+                                    <div class="download__api-item">
+                                        <div class="download__api-logo">
+                                            <img src="img/logo-3.png" alt="yandex">
+                                        </div>
+                                        <span>
+                                            Интеграция с telephony.yandex.ru
+                                        </span>
+                                    </div>
+                                    <div class="download__api-item">
+                                        <div class="download__api-logo">
+                                            <img src="img/logo-4.png" alt="mtt">
                                         </div>
                                         <span>
                                             Интеграция с business.mtt.ru
@@ -1263,15 +1464,18 @@
                                             </svg>
                                         </div>
                                     </div>
-                                    <div class="dropdown-content">
-                                        <div class="dropdown-item">
-                                            PDF
+                                    <div class="dropdown-content drop-upload">
+                                        <div class="dropdown-item" data-type-img="pdf">
+                                            График PDF
                                         </div>
-                                        <div class="dropdown-item">
-                                            PDF
+                                        <div class="dropdown-item" data-type-img="png">
+                                            График PNG
                                         </div>
-                                        <div class="dropdown-item">
-                                            PDF
+                                        <div class="dropdown-item" data-type-img="jpg">
+                                            График JPG
+                                        </div>
+                                        <div class="dropdown-item" data-type-img="jpeg">
+                                            График JPEG
                                         </div>
                                     </div>
                                 </div>
@@ -1282,7 +1486,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="upload__content">
+                        <div class="upload__content active" data-upload="pdf">
                             <div class="upload__item">
                                 <div class="upload__img">
                                     <img src="img/pdf.png" alt="pdf">
@@ -1302,6 +1506,84 @@
                             <div class="upload__item">
                                 <div class="upload__img">
                                     <img src="img/pdf.png" alt="pdf">
+                                </div>
+                                <div class="uplpad__name">
+                                    Название
+                                </div>
+                            </div>
+                        </div>
+                        <div class="upload__content" data-upload="png">
+                            <div class="upload__item">
+                                <div class="upload__img">
+                                    <img src="img/png.png" alt="png">
+                                </div>
+                                <div class="uplpad__name">
+                                    Название
+                                </div>
+                            </div>
+                            <div class="upload__item">
+                                <div class="upload__img">
+                                    <img src="img/png.png" alt="png">
+                                </div>
+                                <div class="uplpad__name">
+                                    Название
+                                </div>
+                            </div>
+                            <div class="upload__item">
+                                <div class="upload__img">
+                                    <img src="img/png.png" alt="png">
+                                </div>
+                                <div class="uplpad__name">
+                                    Название
+                                </div>
+                            </div>
+                        </div>
+                        <div class="upload__content" data-upload="jpg">
+                            <div class="upload__item">
+                                <div class="upload__img">
+                                    <img src="img/jpg.png" alt="jpg">
+                                </div>
+                                <div class="uplpad__name">
+                                    Название
+                                </div>
+                            </div>
+                            <div class="upload__item">
+                                <div class="upload__img">
+                                    <img src="img/jpg.png" alt="jpg">
+                                </div>
+                                <div class="uplpad__name">
+                                    Название
+                                </div>
+                            </div>
+                            <div class="upload__item">
+                                <div class="upload__img">
+                                    <img src="img/jpg.png" alt="jpg">
+                                </div>
+                                <div class="uplpad__name">
+                                    Название
+                                </div>
+                            </div>
+                        </div>
+                        <div class="upload__content " data-upload="jpeg">
+                            <div class="upload__item">
+                                <div class="upload__img">
+                                    <img src="img/jpeg.png" alt="jpeg">
+                                </div>
+                                <div class="uplpad__name">
+                                    Название
+                                </div>
+                            </div>
+                            <div class="upload__item">
+                                <div class="upload__img">
+                                    <img src="img/jpeg.png" alt="jpeg">
+                                </div>
+                                <div class="uplpad__name">
+                                    Название
+                                </div>
+                            </div>
+                            <div class="upload__item">
+                                <div class="upload__img">
+                                    <img src="img/jpeg.png" alt="jpeg">
                                 </div>
                                 <div class="uplpad__name">
                                     Название
@@ -1341,8 +1623,7 @@
                                 Интеграция
                             </div>
                             <div class="integration__progress">
-                                <div class="integration__progress-title">
-                                    Хранилище заполнено на:
+                                <div class="integration__progress-title">Хранилище заполнено на:
                                 </div>
                                 <div class="integration__progress-info">
                                     <span class="integration__progress-space">25 Мб из 256Мб</span>
@@ -1438,6 +1719,132 @@
                             </div>
                         </div>
                         <div class="integration__items" id="integration-mail">
+                            <div class="integration__item">
+                                <div class="integration__item-logo">
+                                    <img src="img/yandex.png" alt="yandex">
+                                </div>
+                                <span>
+                                    Интеграция с telephony.yandex.ru
+                                </span>
+                            </div>
+                        </div>
+                        <div class="integration__items" id="integration-bill">
+                            <div class="integration__item">
+                                <div class="integration__item-logo">
+                                    <img src="img/yandex.png" alt="yandex">
+                                </div>
+                                <span>
+                                    Интеграция с telephony.yandex.ru
+                                </span>
+                            </div>
+                            <div class="integration__item">
+                                <div class="integration__item-logo">
+                                    <img src="img/yandex.png" alt="yandex">
+                                </div>
+                                <span>
+                                    Интеграция с telephony.yandex.ru
+                                </span>
+                            </div>
+                            <div class="integration__item">
+                                <div class="integration__item-logo">
+                                    <img src="img/yandex.png" alt="yandex">
+                                </div>
+                                <span>
+                                    Интеграция с telephony.yandex.ru
+                                </span>
+                            </div>
+                            <div class="integration__item">
+                                <div class="integration__item-logo">
+                                    <img src="img/yandex.png" alt="yandex">
+                                </div>
+                                <span>
+                                    Интеграция с telephony.yandex.ru
+                                </span>
+                            </div>
+                            <div class="integration__item">
+                                <div class="integration__item-logo">
+                                    <img src="img/yandex.png" alt="yandex">
+                                </div>
+                                <span>
+                                    Интеграция с telephony.yandex.ru
+                                </span>
+                            </div>
+                        </div>
+                        <div class="integration__items" id="integration-judge">
+                            <div class="integration__item">
+                                <div class="integration__item-logo">
+                                    <img src="img/yandex.png" alt="yandex">
+                                </div>
+                                <span>
+                                    Интеграция с telephony.yandex.ru
+                                </span>
+                            </div>
+                            <div class="integration__item">
+                                <div class="integration__item-logo">
+                                    <img src="img/yandex.png" alt="yandex">
+                                </div>
+                                <span>
+                                    Интеграция с telephony.yandex.ru
+                                </span>
+                            </div>
+                            <div class="integration__item">
+                                <div class="integration__item-logo">
+                                    <img src="img/yandex.png" alt="yandex">
+                                </div>
+                                <span>
+                                    Интеграция с telephony.yandex.ru
+                                </span>
+                            </div>
+                            <div class="integration__item">
+                                <div class="integration__item-logo">
+                                    <img src="img/yandex.png" alt="yandex">
+                                </div>
+                                <span>
+                                    Интеграция с telephony.yandex.ru
+                                </span>
+                            </div>
+                            <div class="integration__item">
+                                <div class="integration__item-logo">
+                                    <img src="img/yandex.png" alt="yandex">
+                                </div>
+                                <span>
+                                    Интеграция с telephony.yandex.ru
+                                </span>
+                            </div>
+                        </div>
+                        <div class="integration__items" id="integration-crm">
+                            <div class="integration__item">
+                                <div class="integration__item-logo">
+                                    <img src="img/yandex.png" alt="yandex">
+                                </div>
+                                <span>
+                                    Интеграция с telephony.yandex.ru
+                                </span>
+                            </div>
+                            <div class="integration__item">
+                                <div class="integration__item-logo">
+                                    <img src="img/yandex.png" alt="yandex">
+                                </div>
+                                <span>
+                                    Интеграция с telephony.yandex.ru
+                                </span>
+                            </div>
+                            <div class="integration__item">
+                                <div class="integration__item-logo">
+                                    <img src="img/yandex.png" alt="yandex">
+                                </div>
+                                <span>
+                                    Интеграция с telephony.yandex.ru
+                                </span>
+                            </div>
+                            <div class="integration__item">
+                                <div class="integration__item-logo">
+                                    <img src="img/yandex.png" alt="yandex">
+                                </div>
+                                <span>
+                                    Интеграция с telephony.yandex.ru
+                                </span>
+                            </div>
                             <div class="integration__item">
                                 <div class="integration__item-logo">
                                     <img src="img/yandex.png" alt="yandex">
