@@ -275,7 +275,7 @@
                                 </div>
                                 <div class="progrres__timer">
                                     <div class="progress__title">Прошло времени:</div>
-                                    <span>00:00:35</span>
+                                    <span>00:01:00</span>
                                 </div>
                                 <div class="progrres__timer">
                                     <div class="progress__title">Примерно осталось:</div>
@@ -380,11 +380,10 @@
                             <li><a href="download-instruction.html" class="change-data__aside-link instr">Инструкция</a>
                             </li>
                             <li><a href="download-instruction.html"
-                                    class="change-data__aside-link hide otchet">Отчеты</a></li>
-                            <li><a href="index.html" class="change-data__aside-link dosud ">Досудебное
-                                    производство</a>
+                                    class="change-data__aside-link hide otchet active">Отчеты</a></li>
+                            <li><a href="index.html" class="change-data__aside-link">Досудебное производство</a>
                             </li>
-                            <li><a href="judge.html" class="change-data__aside-link active">Судебное производство</a></li>
+                            <li><a href="judge.html" class="change-data__aside-link dosud active">Судебное производство</a></li>
                             <li><a href="judge.html" class="change-data__aside-link">Исполнительное производство</a>
                             </li>
                             <li><a href="judge.html" class="change-data__aside-link">Банкротство</a></li>
@@ -788,7 +787,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="download__files-items for-all">
+                                <!-- <div class="download__files-items for-all">
                                     <div class="download__files-item">
                                         <div class="download__files-btn file-reload">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="icon">
@@ -806,45 +805,7 @@
                                             </svg>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="download__files-items for-all">
-                                    <div class="download__files-item">
-                                        <div class="download__files-btn file-reload">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                                                <use xlink:href="img/icons/sprite.svg#reload" />
-                                            </svg>
-                                        </div>
-                                        <div class="download__files-btn file-delete">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                                                <use xlink:href="img/icons/sprite.svg#delete" />
-                                            </svg>
-                                        </div>
-                                        <div class="download__files-plus">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                                                <use xlink:href="img/icons/sprite.svg#add" />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="download__files-items for-all">
-                                    <div class="download__files-item">
-                                        <div class="download__files-btn file-reload">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                                                <use xlink:href="img/icons/sprite.svg#reload" />
-                                            </svg>
-                                        </div>
-                                        <div class="download__files-btn file-delete">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                                                <use xlink:href="img/icons/sprite.svg#delete" />
-                                            </svg>
-                                        </div>
-                                        <div class="download__files-plus">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                                                <use xlink:href="img/icons/sprite.svg#add" />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
+                                </div> -->
                                 <div class="download__files-actions hide">
                                     <div class="download__files-actions-btn download__files-more">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="icon">
@@ -1156,7 +1117,25 @@
                                         </div>
                                     </div>
                                 </div>
-
+                                <div class="download__files-items for-all">
+                                    <div class="download__files-item">
+                                        <div class="download__files-btn file-reload">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                                <use xlink:href="img/icons/sprite.svg#reload"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="download__files-btn file-delete">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                                <use xlink:href="img/icons/sprite.svg#delete"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="download__files-plus">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                                <use xlink:href="img/icons/sprite.svg#add"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="download__files-actions">
                                     <div class="download__files-actions-btn download__files-more">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="icon">
@@ -1857,121 +1836,6 @@
                     </div>
                 </div>
             </section>
-        </div>
-    </div>
-    <div class="modal modal--middle modal--center modal-crm">
-        <div class="modal__inner">
-            <div class="modal__content">
-                <div class="modal__header">
-                    <div class="modal__steps">
-                        <div class="modal__step active">
-                            <span>Шаг 1</span>
-                        </div>
-                        <div class="modal__step">
-                            <span>Шаг 2</span>
-                        </div>
-                    </div>
-                    <div class="modal__logo" style="background-image: url(./img/amocrm.png);">
-                    </div>
-                </div>
-                <div class="modal__body" data-step="1">
-                    <div class="modal__title">
-                        Введите данные для подключения
-                    </div>
-                    <form action="#" method="post">
-                        <div class="form-group">
-                            <span class="form-name">API ключ</span>
-                            <input class="custom-input" type="text" name="api-key" id="api-key"
-                                placeholder="Введите ключ">
-                        </div>
-                        <div class="form-group">
-                            <span class="form-name">Логин</span>
-                            <input class="custom-input" type="text" name="api-login" id="api-login"
-                                placeholder="Введите логин">
-                        </div>
-                        <div class="form-group">
-                            <span class="form-name">Пароль</span>
-                            <input class="custom-input input-password" type="password" name="api-password"
-                                id="api-password" placeholder="Введите пароль">
-                            <div class="toggle-password">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                                    <use xlink:href="img/icons/sprite.svg#eye"></use>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="form-links">
-                            <a href="#" class="form-link">Впервые?</a>
-                            <a href="#" class="form-link-line">Установить приложение</a>
-                        </div>
-                        <div class="form-btns">
-                            <button type="reset" class="close-modal btn btn--out">Отмена</button>
-                            <button type="submit" class="next-process btn btn--primary">Подключиться</button>
-                        </div>
-                    </form>
-                    <div class="modal__process">
-                        <div class="modal__title modal__process-item">
-                            Подключение...
-                        </div>
-                        <span class="modal__line-bg line-bg modal__process-item">
-                            <span class="modal__line line"></span>
-                        </span>
-                        <button class="close-process btn btn--out modal__process-item">Отмена</button>
-                        <div class="modal__process-error">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                                <use xlink:href="img/icons/sprite.svg#error" />
-                            </svg>
-                            <span>Не удалось подключиться.
-                                Попробуйте снова</span>
-                            <button class="btn btn--out modal__process-again">Подключиться</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal__body hide" data-step="2">
-                    <div class="modal__title">
-                        Выполните персональные настройки
-                    </div>
-                    <div class="crm-settings">
-                        <span class="settings-name">Использовать по умолчанию для:</span>
-                        <div class="settings-drop">
-                            <span>Вид должника</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                                <use xlink:href="img/icons/sprite.svg#arrow-down" />
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="crm-settings">
-                        <span class="settings-name">Вид настройки</span>
-                        <div class="settings-drop">
-                            <span>Настройка</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                                <use xlink:href="img/icons/sprite.svg#arrow-down" />
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="crm-settings">
-                        <span class="settings-name">Вид настройки</span>
-                        <div class="settings-drop">
-                            <span>Настройка</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                                <use xlink:href="img/icons/sprite.svg#arrow-down" />
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="crm-settings">
-                        <span class="settings-name">Вид настройки</span>
-                        <div class="settings-drop">
-                            <span>Настройка</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                                <use xlink:href="img/icons/sprite.svg#arrow-down" />
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="form-btns">
-                        <button class="close-modal btn btn--out">Отмена</button>
-                        <button class="close-modal btn btn--primary">Готово</button>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
     <script src="js/jquery.min.js"></script>
